@@ -1314,6 +1314,54 @@
           }
         }
       ]
+    },
+    {
+      "id": "tokenId-2a07b73a-d13d-45b5-ab6a-79a76879e3a2",
+      "displayName": "Red 100",
+      "description": "",
+      "resolvedValueTypeId": "color",
+      "propertyTypes": [],
+      "private": false,
+      "themeable": false,
+      "status": "experimental",
+      "tokenTier": "PRIMITIVE",
+      "generatedByAlgorithm": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomyId-0000-0000-0000",
+          "termId": "termId-0b5bb63c-4571-405d-8019-2b927823fab5"
+        },
+        {
+          "taxonomyId": "taxonomyId-3333-3333-3333",
+          "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Red/100"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-red-100"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Red_100"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_RED_100"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#ffaaaa"
+          }
+        }
+      ]
     }
   ],
   "platforms": [
