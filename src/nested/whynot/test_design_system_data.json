@@ -1266,6 +1266,54 @@
           }
         }
       ]
+    },
+    {
+      "id": "tokenId-784014f4-b60e-4c77-8d57-777bb978fd0c",
+      "displayName": "Red 800",
+      "description": "",
+      "resolvedValueTypeId": "color",
+      "propertyTypes": [],
+      "private": false,
+      "themeable": false,
+      "status": "experimental",
+      "tokenTier": "PRIMITIVE",
+      "generatedByAlgorithm": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomyId-0000-0000-0000",
+          "termId": "termId-0b5bb63c-4571-405d-8019-2b927823fab5"
+        },
+        {
+          "taxonomyId": "taxonomyId-3333-3333-3333",
+          "termId": "termId-2a16f703-35c5-41d3-9ecc-a61095e39ac4"
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Red/800"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-red-800"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Red_800"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_RED_800"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#ff0000"
+          }
+        }
+      ]
     }
   ],
   "platforms": [
