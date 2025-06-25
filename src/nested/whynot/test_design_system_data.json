@@ -1807,7 +1807,7 @@
     ]
   },
   "versionHistory": [],
-  "systemName": "Design System",
+  "systemName": "Test design system",
   "systemId": "design-system",
   "description": "A comprehensive design system with tokens, dimensions, and themes",
   "version": "1.0.0"
