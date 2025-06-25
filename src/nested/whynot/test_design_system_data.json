@@ -179,7 +179,7 @@
   "tokens": [
     {
       "id": "token-7777-7777-7777",
-      "displayName": "Black",
+      "displayName": "Blackooo",
       "description": "Pure black",
       "resolvedValueTypeId": "color",
       "private": false,
@@ -202,15 +202,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spblack"
+          "formattedName": "--sp-black"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpBlack"
+          "formattedName": "Sp_Black"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPBLACK"
+          "formattedName": "SP_BLACK"
         }
       ],
       "valuesByMode": [
@@ -1266,54 +1266,6 @@
           }
         }
       ]
-    },
-    {
-      "id": "tokenId-0912632b-d48c-43a3-9646-22d363c9b79d",
-      "displayName": "Red 100",
-      "description": "",
-      "resolvedValueTypeId": "color",
-      "propertyTypes": [],
-      "private": true,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": false,
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-0000-0000-0000",
-          "termId": "termId-0b5bb63c-4571-405d-8019-2b927823fab5"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Red/100"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-red-100"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Red_100"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_RED_100"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "#FF0000"
-          }
-        }
-      ]
     }
   ],
   "platforms": [
@@ -1364,10 +1316,10 @@
   ],
   "themes": [
     {
-      "id": "theme-test-a",
-      "displayName": "Test Theme",
-      "isDefault": false,
-      "description": "A test theme"
+      "id": "default",
+      "displayName": "Default Theme",
+      "isDefault": true,
+      "description": "The default theme for the design system"
     }
   ],
   "taxonomies": [
