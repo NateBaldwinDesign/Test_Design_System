@@ -1308,10 +1308,22 @@
       ],
       "valuesByMode": [
         {
-          "modeIds": [],
+          "modeIds": [
+            "modeId-light"
+          ],
           "value": {
             "value": "#FF0000"
-          }
+          },
+          "platformOverrides": []
+        },
+        {
+          "modeIds": [
+            "modeId-dark"
+          ],
+          "value": {
+            "value": "#880000"
+          },
+          "platformOverrides": []
         }
       ]
     }
