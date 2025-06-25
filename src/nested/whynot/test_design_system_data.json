@@ -1,19 +1,4 @@
 {
-  "systemName": "Test design system",
-  "systemId": "test-design-system-1234-5678-9012",
-  "description": "A test",
-  "version": "1.0.0",
-  "versionHistory": [
-    {
-      "version": "1.0.0",
-      "dimensions": [
-        "dimensionId-0000-0000-0000",
-        "dimensionId-1111-1111-1111",
-        "dimensionId-2222-2222-2222"
-      ],
-      "date": "2024-03-20"
-    }
-  ],
   "tokenCollections": [
     {
       "id": "tokenCollection-AAAA-AAAA-AAAA",
@@ -190,13 +175,6 @@
         "spacing"
       ]
     }
-  ],
-  "dimensionOrder": [
-    "dimensionId-0000-0000-0000",
-    "dimensionId-1111-1111-1111",
-    "dimensionId-2222-2222-2222",
-    "dimensionId-146f111c-de78-41e4-95ac-cb124df72d24",
-    "dimensionId-053537da-160d-4766-8f60-a6fbb88f0ba7"
   ],
   "tokens": [
     {
@@ -1288,6 +1266,54 @@
           }
         }
       ]
+    },
+    {
+      "id": "tokenId-0912632b-d48c-43a3-9646-22d363c9b79d",
+      "displayName": "Red 100",
+      "description": "",
+      "resolvedValueTypeId": "color",
+      "propertyTypes": [],
+      "private": true,
+      "themeable": false,
+      "status": "experimental",
+      "tokenTier": "PRIMITIVE",
+      "generatedByAlgorithm": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomyId-0000-0000-0000",
+          "termId": "termId-0b5bb63c-4571-405d-8019-2b927823fab5"
+        },
+        {
+          "taxonomyId": "taxonomyId-3333-3333-3333",
+          "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Red/100"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-red-100"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Red_100"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_RED_100"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#FF0000"
+          }
+        }
+      ]
     }
   ],
   "platforms": [
@@ -1731,5 +1757,10 @@
       "taxonomyId-b6aa0844-bf72-40c7-ac70-28fa1353ee2b",
       "taxonomyId-3333-3333-3333"
     ]
-  }
+  },
+  "versionHistory": [],
+  "systemName": "Design System",
+  "systemId": "design-system",
+  "description": "A comprehensive design system with tokens, dimensions, and themes",
+  "version": "1.0.0"
 }
