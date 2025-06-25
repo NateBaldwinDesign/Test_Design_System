@@ -1412,10 +1412,10 @@
   ],
   "themes": [
     {
-      "id": "default",
-      "displayName": "Default Theme",
-      "isDefault": true,
-      "description": "The default theme for the design system"
+      "id": "test-theme-a",
+      "displayName": "Test Theme",
+      "isDefault": false,
+      "description": "A test theme for the design system"
     }
   ],
   "taxonomies": [
