@@ -179,7 +179,7 @@
   "tokens": [
     {
       "id": "token-7777-7777-7777",
-      "displayName": "Blackooo",
+      "displayName": "Very dark gray",
       "description": "Pure black",
       "resolvedValueTypeId": "color",
       "private": false,
@@ -190,6 +190,10 @@
         {
           "taxonomyId": "taxonomyId-0000-0000-0000",
           "termId": "termId-0000-0000-0001"
+        },
+        {
+          "taxonomyId": "taxonomyId-2222-2222-2222",
+          "termId": "termId-1111-1111-1111"
         }
       ],
       "propertyTypes": [
@@ -198,24 +202,54 @@
       "codeSyntax": [
         {
           "platformId": "platform-000000",
-          "formattedName": "Black"
+          "formattedName": "Black/Accent"
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--sp-black"
+          "formattedName": "--sp-black-accent"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "Sp_Black"
+          "formattedName": "Sp_Black_Accent"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SP_BLACK"
+          "formattedName": "SP_BLACK_ACCENT"
         }
       ],
       "valuesByMode": [
         {
-          "modeIds": [],
+          "modeIds": [
+            "modeId-light",
+            "modeId-regular"
+          ],
+          "value": {
+            "value": "#000000"
+          },
+          "platformOverrides": [
+            {
+              "platformId": "platform-000000",
+              "value": "#111111"
+            },
+            {
+              "platformId": "platform-111111",
+              "value": "#222222"
+            },
+            {
+              "platformId": "platform-222222",
+              "value": "#333333"
+            },
+            {
+              "platformId": "platform-333333",
+              "value": "#444444"
+            }
+          ]
+        },
+        {
+          "modeIds": [
+            "modeId-dark",
+            "modeId-regular"
+          ],
           "value": {
             "value": "#000000"
           },
