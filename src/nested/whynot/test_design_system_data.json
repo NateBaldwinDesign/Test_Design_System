@@ -1721,8 +1721,8 @@
       "date": "2024-03-20"
     }
   ],
-  "systemName": "Simple design system",
+  "systemName": "Example gh-repo system",
   "systemId": "simple-design-system",
-  "description": "A minimal example design system",
+  "description": "A minimal example design system example from a repo",
   "version": "1.0.0"
 }
