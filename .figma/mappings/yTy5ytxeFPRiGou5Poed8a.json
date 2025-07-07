@@ -1,0 +1,20 @@
+{
+  "fileKey": "yTy5ytxeFPRiGou5Poed8a",
+  "systemId": "simple-design-system",
+  "lastUpdated": "2025-07-07T18:28:01.024Z",
+  "tempToRealId": {
+    "variables": {},
+    "collections": {},
+    "modes": {}
+  },
+  "repositoryContext": {
+    "owner": "NateBaldwinDesign",
+    "repo": "Test_Design_System",
+    "type": "core",
+    "systemId": "simple-design-system"
+  },
+  "metadata": {
+    "exportVersion": "1.0.0",
+    "exportedFrom": "core"
+  }
+}
