@@ -179,7 +179,7 @@
   "tokens": [
     {
       "id": "token-7777-7777-7777",
-      "displayName": "Dark dark grey",
+      "displayName": "Black",
       "description": "Pure black",
       "resolvedValueTypeId": "color",
       "private": false,
@@ -202,15 +202,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--sp-black"
+          "formattedName": "--spblack"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "Sp_Black"
+          "formattedName": "SpBlack"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SP_BLACK"
+          "formattedName": "SPBLACK"
         }
       ],
       "valuesByMode": [
@@ -269,15 +269,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spblue-500"
+          "formattedName": "--sp-blue-500"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpBlue_500"
+          "formattedName": "Sp_Blue_500"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPBLUE_500"
+          "formattedName": "SP_BLUE_500"
         }
       ],
       "valuesByMode": [
@@ -286,7 +286,7 @@
             "modeId-light"
           ],
           "value": {
-            "value": "#274DEA"
+            "value": "#FF00FF"
           },
           "platformOverrides": [
             {
