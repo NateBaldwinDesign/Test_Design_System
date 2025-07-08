@@ -286,7 +286,7 @@
             "modeId-light"
           ],
           "value": {
-            "value": "#ff0000"
+            "value": "#00ffff"
           },
           "platformOverrides": [
             {
