@@ -628,54 +628,6 @@
       ]
     },
     {
-      "id": "token-1748982963918",
-      "displayName": "Spacing 100",
-      "description": "",
-      "resolvedValueTypeId": "spacing",
-      "propertyTypes": [],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/100"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spspacing-100"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpSpacing_100"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPSPACING_100"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 16
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
       "id": "token-1748982995585",
       "displayName": "Radius 100",
       "description": "",
@@ -718,54 +670,6 @@
           "modeIds": [],
           "value": {
             "value": 4
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1749055918672",
-      "displayName": "Spacing 200",
-      "description": "",
-      "resolvedValueTypeId": "spacing",
-      "propertyTypes": [],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/200"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spspacing-200"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpSpacing_200"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPSPACING_200"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 32
           },
           "platformOverrides": []
         }
