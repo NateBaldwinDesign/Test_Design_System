@@ -192,8 +192,7 @@
           "termId": "termId-0000-0000-0001"
         }
       ],
-      "propertyTypes": [
-      ],
+      "propertyTypes": [],
       "codeSyntax": [
         {
           "platformId": "platform-000000",
@@ -258,8 +257,7 @@
           "termId": "termId-2222-2222-2227"
         }
       ],
-      "propertyTypes": [
-      ],
+      "propertyTypes": [],
       "codeSyntax": [
         {
           "platformId": "platform-000000",
@@ -327,6 +325,31 @@
         }
       ],
       "propertyTypes": [
+        {
+          "id": "text-color",
+          "displayName": "Text Color",
+          "category": "color",
+          "compatibleValueTypes": [
+            "color"
+          ],
+          "platformMappings": {
+            "css": [
+              "color"
+            ],
+            "figma": [
+              "TEXT_FILL"
+            ],
+            "ios": [
+              ".foregroundColor()",
+              ".foregroundStyle()"
+            ],
+            "android": [
+              "textColor",
+              "colorOnSurface"
+            ]
+          },
+          "inheritance": true
+        }
       ],
       "codeSyntax": [
         {
@@ -335,15 +358,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--sptext-accent"
+          "formattedName": "--sp-text-accent"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpText_Accent"
+          "formattedName": "Sp_Text_Accent"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPTEXT_ACCENT"
+          "formattedName": "SP_TEXT_ACCENT"
         }
       ],
       "valuesByMode": [
@@ -456,7 +479,33 @@
       "displayName": "Font primary",
       "description": "",
       "resolvedValueTypeId": "font_family",
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "font-family",
+          "displayName": "Font Family",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-family"
+          ],
+          "platformMappings": {
+            "css": [
+              "font-family"
+            ],
+            "figma": [
+              "FONT_FAMILY"
+            ],
+            "ios": [
+              ".font()",
+              ".fontFamily()"
+            ],
+            "android": [
+              "fontFamily",
+              "typeface"
+            ]
+          },
+          "inheritance": true
+        }
+      ],
       "private": false,
       "themeable": true,
       "status": "stable",
@@ -478,15 +527,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spfont family-primary"
+          "formattedName": "--sp-font family-primary"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpFont family_Primary"
+          "formattedName": "Sp_Font family_Primary"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPFONT FAMILY_PRIMARY"
+          "formattedName": "SP_FONT FAMILY_PRIMARY"
         }
       ],
       "valuesByMode": [
