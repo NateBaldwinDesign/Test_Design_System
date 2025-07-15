@@ -1,19 +1,4 @@
 {
-  "systemName": "Example GH repo design system",
-  "systemId": "example-gh-repo-design-system",
-  "description": "A minimal example design system from a GitHub repository",
-  "version": "1.0.0",
-  "versionHistory": [
-    {
-      "version": "1.0.0",
-      "dimensions": [
-        "dimensionId-0000-0000-0000",
-        "dimensionId-1111-1111-1111",
-        "dimensionId-2222-2222-2222"
-      ],
-      "date": "2024-03-20"
-    }
-  ],
   "tokenCollections": [
     {
       "id": "tokenCollection-AAAA-AAAA-AAAA",
@@ -191,13 +176,6 @@
       ]
     }
   ],
-  "dimensionOrder": [
-    "dimensionId-0000-0000-0000",
-    "dimensionId-1111-1111-1111",
-    "dimensionId-2222-2222-2222",
-    "dimensionId-146f111c-de78-41e4-95ac-cb124df72d24",
-    "dimensionId-053537da-160d-4766-8f60-a6fbb88f0ba7"
-  ],
   "tokens": [
     {
       "id": "token-7777-7777-7777",
@@ -216,22 +194,107 @@
       ],
       "propertyTypes": [
         {
-          "id": "ALL",
-          "displayName": "All Properties",
-          "category": "layout",
+          "id": "background-color",
+          "displayName": "Background Color",
+          "category": "color",
           "compatibleValueTypes": [
-            "color",
-            "dimension",
-            "font-family",
-            "font-weight",
-            "font-size",
-            "line-height",
-            "letter-spacing",
-            "duration",
-            "cubic-bezier",
-            "blur",
-            "radius"
+            "color"
           ],
+          "platformMappings": {
+            "css": [
+              "background",
+              "background-color"
+            ],
+            "figma": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "ios": [
+              ".background()",
+              ".backgroundColor"
+            ],
+            "android": [
+              "background",
+              "colorBackground"
+            ]
+          },
+          "inheritance": true
+        },
+        {
+          "id": "text-color",
+          "displayName": "Text Color",
+          "category": "color",
+          "compatibleValueTypes": [
+            "color"
+          ],
+          "platformMappings": {
+            "css": [
+              "color"
+            ],
+            "figma": [
+              "TEXT_FILL"
+            ],
+            "ios": [
+              ".foregroundColor()",
+              ".foregroundStyle()"
+            ],
+            "android": [
+              "textColor",
+              "colorOnSurface"
+            ]
+          },
+          "inheritance": true
+        },
+        {
+          "id": "border-color",
+          "displayName": "Border Color",
+          "category": "color",
+          "compatibleValueTypes": [
+            "color"
+          ],
+          "platformMappings": {
+            "css": [
+              "border-color",
+              "border-*-color"
+            ],
+            "figma": [
+              "STROKE_COLOR"
+            ],
+            "ios": [
+              ".border()",
+              ".strokeColor"
+            ],
+            "android": [
+              "strokeColor",
+              "colorOutline"
+            ]
+          },
+          "inheritance": false
+        },
+        {
+          "id": "shadow-color",
+          "displayName": "Shadow Color",
+          "category": "color",
+          "compatibleValueTypes": [
+            "color"
+          ],
+          "platformMappings": {
+            "css": [
+              "box-shadow",
+              "text-shadow"
+            ],
+            "figma": [
+              "EFFECT_COLOR"
+            ],
+            "ios": [
+              ".shadow()",
+              ".shadowColor"
+            ],
+            "android": [
+              "shadowColor",
+              "elevation"
+            ]
+          },
           "inheritance": false
         }
       ],
@@ -242,15 +305,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spblack"
+          "formattedName": "--sp-black"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpBlack"
+          "formattedName": "Sp_Black"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPBLACK"
+          "formattedName": "SP_BLACK"
         }
       ],
       "valuesByMode": [
@@ -301,22 +364,107 @@
       ],
       "propertyTypes": [
         {
-          "id": "ALL",
-          "displayName": "All Properties",
-          "category": "layout",
+          "id": "background-color",
+          "displayName": "Background Color",
+          "category": "color",
           "compatibleValueTypes": [
-            "color",
-            "dimension",
-            "font-family",
-            "font-weight",
-            "font-size",
-            "line-height",
-            "letter-spacing",
-            "duration",
-            "cubic-bezier",
-            "blur",
-            "radius"
+            "color"
           ],
+          "platformMappings": {
+            "css": [
+              "background",
+              "background-color"
+            ],
+            "figma": [
+              "FRAME_FILL",
+              "SHAPE_FILL"
+            ],
+            "ios": [
+              ".background()",
+              ".backgroundColor"
+            ],
+            "android": [
+              "background",
+              "colorBackground"
+            ]
+          },
+          "inheritance": true
+        },
+        {
+          "id": "text-color",
+          "displayName": "Text Color",
+          "category": "color",
+          "compatibleValueTypes": [
+            "color"
+          ],
+          "platformMappings": {
+            "css": [
+              "color"
+            ],
+            "figma": [
+              "TEXT_FILL"
+            ],
+            "ios": [
+              ".foregroundColor()",
+              ".foregroundStyle()"
+            ],
+            "android": [
+              "textColor",
+              "colorOnSurface"
+            ]
+          },
+          "inheritance": true
+        },
+        {
+          "id": "border-color",
+          "displayName": "Border Color",
+          "category": "color",
+          "compatibleValueTypes": [
+            "color"
+          ],
+          "platformMappings": {
+            "css": [
+              "border-color",
+              "border-*-color"
+            ],
+            "figma": [
+              "STROKE_COLOR"
+            ],
+            "ios": [
+              ".border()",
+              ".strokeColor"
+            ],
+            "android": [
+              "strokeColor",
+              "colorOutline"
+            ]
+          },
+          "inheritance": false
+        },
+        {
+          "id": "shadow-color",
+          "displayName": "Shadow Color",
+          "category": "color",
+          "compatibleValueTypes": [
+            "color"
+          ],
+          "platformMappings": {
+            "css": [
+              "box-shadow",
+              "text-shadow"
+            ],
+            "figma": [
+              "EFFECT_COLOR"
+            ],
+            "ios": [
+              ".shadow()",
+              ".shadowColor"
+            ],
+            "android": [
+              "shadowColor",
+              "elevation"
+            ]
+          },
           "inheritance": false
         }
       ],
@@ -327,15 +475,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spblue-500"
+          "formattedName": "--sp-blue-500"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpBlue_500"
+          "formattedName": "Sp_Blue_500"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPBLUE_500"
+          "formattedName": "SP_BLUE_500"
         }
       ],
       "valuesByMode": [
@@ -388,23 +536,29 @@
       ],
       "propertyTypes": [
         {
-          "id": "ALL",
-          "displayName": "All Properties",
-          "category": "layout",
+          "id": "text-color",
+          "displayName": "Text Color",
+          "category": "color",
           "compatibleValueTypes": [
-            "color",
-            "dimension",
-            "font-family",
-            "font-weight",
-            "font-size",
-            "line-height",
-            "letter-spacing",
-            "duration",
-            "cubic-bezier",
-            "blur",
-            "radius"
+            "color"
           ],
-          "inheritance": false
+          "platformMappings": {
+            "css": [
+              "color"
+            ],
+            "figma": [
+              "TEXT_FILL"
+            ],
+            "ios": [
+              ".foregroundColor()",
+              ".foregroundStyle()"
+            ],
+            "android": [
+              "textColor",
+              "colorOnSurface"
+            ]
+          },
+          "inheritance": true
         }
       ],
       "codeSyntax": [
@@ -414,15 +568,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--sptext-accent"
+          "formattedName": "--sp-text-accent"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpText_Accent"
+          "formattedName": "Sp_Text_Accent"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPTEXT_ACCENT"
+          "formattedName": "SP_TEXT_ACCENT"
         }
       ],
       "valuesByMode": [
@@ -535,7 +689,33 @@
       "displayName": "Font primary",
       "description": "",
       "resolvedValueTypeId": "font_family",
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "font-family",
+          "displayName": "Font Family",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-family"
+          ],
+          "platformMappings": {
+            "css": [
+              "font-family"
+            ],
+            "figma": [
+              "FONT_FAMILY"
+            ],
+            "ios": [
+              ".font()",
+              ".fontFamily()"
+            ],
+            "android": [
+              "fontFamily",
+              "typeface"
+            ]
+          },
+          "inheritance": true
+        }
+      ],
       "private": false,
       "themeable": true,
       "status": "stable",
@@ -557,15 +737,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spfont family-primary"
+          "formattedName": "--sp-font family-primary"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpFont family_Primary"
+          "formattedName": "Sp_Font family_Primary"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPFONT FAMILY_PRIMARY"
+          "formattedName": "SP_FONT FAMILY_PRIMARY"
         }
       ],
       "valuesByMode": [
@@ -612,7 +792,33 @@
       "displayName": "Line height primary",
       "description": "",
       "resolvedValueTypeId": "line_height",
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "line-height",
+          "displayName": "Line Height",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "line-height"
+          ],
+          "platformMappings": {
+            "css": [
+              "line-height"
+            ],
+            "figma": [
+              "LINE_HEIGHT"
+            ],
+            "ios": [
+              ".lineSpacing()",
+              ".lineHeight()"
+            ],
+            "android": [
+              "lineHeight",
+              "lineSpacingMultiplier"
+            ]
+          },
+          "inheritance": true
+        }
+      ],
       "private": false,
       "themeable": false,
       "status": "experimental",
@@ -634,15 +840,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spline height-primary"
+          "formattedName": "--sp-line height-primary"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpLine height_Primary"
+          "formattedName": "Sp_Line height_Primary"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPLINE HEIGHT_PRIMARY"
+          "formattedName": "SP_LINE HEIGHT_PRIMARY"
         }
       ],
       "valuesByMode": [
@@ -660,7 +866,33 @@
       "displayName": "Font weight primary",
       "description": "",
       "resolvedValueTypeId": "font_weight",
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "font-weight",
+          "displayName": "Font Weight",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-weight"
+          ],
+          "platformMappings": {
+            "css": [
+              "font-weight"
+            ],
+            "figma": [
+              "FONT_WEIGHT"
+            ],
+            "ios": [
+              ".fontWeight()",
+              ".font()"
+            ],
+            "android": [
+              "textStyle",
+              "fontWeight"
+            ]
+          },
+          "inheritance": true
+        }
+      ],
       "private": false,
       "themeable": false,
       "status": "experimental",
@@ -682,15 +914,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spfont weight-primary"
+          "formattedName": "--sp-font weight-primary"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpFont weight_Primary"
+          "formattedName": "Sp_Font weight_Primary"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPFONT WEIGHT_PRIMARY"
+          "formattedName": "SP_FONT WEIGHT_PRIMARY"
         }
       ],
       "valuesByMode": [
@@ -704,59 +936,40 @@
       ]
     },
     {
-      "id": "token-1748982963918",
-      "displayName": "Spacing 100",
-      "description": "",
-      "resolvedValueTypeId": "spacing",
-      "propertyTypes": [],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/100"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spspacing-100"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpSpacing_100"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPSPACING_100"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 16
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
       "id": "token-1748982995585",
       "displayName": "Radius 100",
       "description": "",
       "resolvedValueTypeId": "radius",
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "border-radius",
+          "displayName": "Border Radius",
+          "category": "border",
+          "compatibleValueTypes": [
+            "dimension",
+            "radius"
+          ],
+          "platformMappings": {
+            "css": [
+              "border-radius",
+              "border-*-radius"
+            ],
+            "figma": [
+              "CORNER_RADIUS"
+            ],
+            "ios": [
+              ".cornerRadius()",
+              ".clipShape()"
+            ],
+            "android": [
+              "cornerRadius",
+              "shapeAppearance"
+            ]
+          },
+          "defaultUnit": "px",
+          "inheritance": false
+        }
+      ],
       "private": false,
       "themeable": false,
       "status": "experimental",
@@ -778,15 +991,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spradius-100"
+          "formattedName": "--sp-radius-100"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpRadius_100"
+          "formattedName": "Sp_Radius_100"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPRADIUS_100"
+          "formattedName": "SP_RADIUS_100"
         }
       ],
       "valuesByMode": [
@@ -800,59 +1013,37 @@
       ]
     },
     {
-      "id": "token-1749055918672",
-      "displayName": "Spacing 200",
-      "description": "",
-      "resolvedValueTypeId": "spacing",
-      "propertyTypes": [],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/200"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spspacing-200"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpSpacing_200"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPSPACING_200"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 32
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
       "id": "token-1749055952697",
       "displayName": "Font secondary",
       "description": "",
       "resolvedValueTypeId": "font_family",
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "font-family",
+          "displayName": "Font Family",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-family"
+          ],
+          "platformMappings": {
+            "css": [
+              "font-family"
+            ],
+            "figma": [
+              "FONT_FAMILY"
+            ],
+            "ios": [
+              ".font()",
+              ".fontFamily()"
+            ],
+            "android": [
+              "fontFamily",
+              "typeface"
+            ]
+          },
+          "inheritance": true
+        }
+      ],
       "private": false,
       "themeable": false,
       "status": "experimental",
@@ -874,15 +1065,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spfont family-secondary"
+          "formattedName": "--sp-font family-secondary"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpFont family_Secondary"
+          "formattedName": "Sp_Font family_Secondary"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPFONT FAMILY_SECONDARY"
+          "formattedName": "SP_FONT FAMILY_SECONDARY"
         }
       ],
       "valuesByMode": [
@@ -900,7 +1091,33 @@
       "displayName": "Line height 200",
       "description": "",
       "resolvedValueTypeId": "line_height",
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "line-height",
+          "displayName": "Line Height",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "line-height"
+          ],
+          "platformMappings": {
+            "css": [
+              "line-height"
+            ],
+            "figma": [
+              "LINE_HEIGHT"
+            ],
+            "ios": [
+              ".lineSpacing()",
+              ".lineHeight()"
+            ],
+            "android": [
+              "lineHeight",
+              "lineSpacingMultiplier"
+            ]
+          },
+          "inheritance": true
+        }
+      ],
       "private": false,
       "themeable": false,
       "status": "experimental",
@@ -922,15 +1139,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spline height-200"
+          "formattedName": "--sp-line height-200"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpLine height_200"
+          "formattedName": "Sp_Line height_200"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPLINE HEIGHT_200"
+          "formattedName": "SP_LINE HEIGHT_200"
         }
       ],
       "valuesByMode": [
@@ -948,7 +1165,33 @@
       "displayName": "Font weight 200",
       "description": "",
       "resolvedValueTypeId": "font_weight",
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "font-weight",
+          "displayName": "Font Weight",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-weight"
+          ],
+          "platformMappings": {
+            "css": [
+              "font-weight"
+            ],
+            "figma": [
+              "FONT_WEIGHT"
+            ],
+            "ios": [
+              ".fontWeight()",
+              ".font()"
+            ],
+            "android": [
+              "textStyle",
+              "fontWeight"
+            ]
+          },
+          "inheritance": true
+        }
+      ],
       "private": false,
       "themeable": false,
       "status": "experimental",
@@ -970,15 +1213,15 @@
         },
         {
           "platformId": "platform-111111",
-          "formattedName": "--spfont weight-200"
+          "formattedName": "--sp-font weight-200"
         },
         {
           "platformId": "platform-222222",
-          "formattedName": "SpFont weight_200"
+          "formattedName": "Sp_Font weight_200"
         },
         {
           "platformId": "platform-333333",
-          "formattedName": "SPFONT WEIGHT_200"
+          "formattedName": "SP_FONT WEIGHT_200"
         }
       ],
       "valuesByMode": [
@@ -1012,14 +1255,114 @@
           "termId": "termId-eb44ad20-5426-4cee-ab97-f0ff7dac6e43"
         }
       ],
-      "propertyTypes": [],
-      "codeSyntax": [],
+      "propertyTypes": [
+        {
+          "id": "padding",
+          "displayName": "Padding",
+          "category": "spacing",
+          "compatibleValueTypes": [
+            "spacing"
+          ],
+          "platformMappings": {
+            "css": [
+              "padding",
+              "padding-*"
+            ],
+            "figma": [
+              "GAP"
+            ],
+            "ios": [
+              ".padding()"
+            ],
+            "android": [
+              "padding",
+              "paddingStart",
+              "paddingEnd"
+            ]
+          },
+          "defaultUnit": "px",
+          "inheritance": false
+        },
+        {
+          "id": "margin",
+          "displayName": "Margin",
+          "category": "spacing",
+          "compatibleValueTypes": [
+            "spacing"
+          ],
+          "platformMappings": {
+            "css": [
+              "margin",
+              "margin-*"
+            ],
+            "figma": [
+              "GAP"
+            ],
+            "ios": [
+              ".offset()"
+            ],
+            "android": [
+              "layout_margin",
+              "marginStart",
+              "marginEnd"
+            ]
+          },
+          "defaultUnit": "px",
+          "inheritance": false
+        },
+        {
+          "id": "gap-spacing",
+          "displayName": "Gap/Spacing",
+          "category": "spacing",
+          "compatibleValueTypes": [
+            "spacing"
+          ],
+          "platformMappings": {
+            "css": [
+              "gap",
+              "row-gap",
+              "column-gap"
+            ],
+            "figma": [
+              "GAP"
+            ],
+            "ios": [
+              ".spacing()"
+            ],
+            "android": [
+              "layout_spaceBetween",
+              "space"
+            ]
+          },
+          "defaultUnit": "px",
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/50"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-50"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_50"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_50"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "0.015625"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1044,14 +1387,114 @@
           "termId": "termId-f99d8a1e-bf8a-4cf0-8944-6140f19ee6cc"
         }
       ],
-      "propertyTypes": [],
-      "codeSyntax": [],
+      "propertyTypes": [
+        {
+          "id": "padding",
+          "displayName": "Padding",
+          "category": "spacing",
+          "compatibleValueTypes": [
+            "spacing"
+          ],
+          "platformMappings": {
+            "css": [
+              "padding",
+              "padding-*"
+            ],
+            "figma": [
+              "GAP"
+            ],
+            "ios": [
+              ".padding()"
+            ],
+            "android": [
+              "padding",
+              "paddingStart",
+              "paddingEnd"
+            ]
+          },
+          "defaultUnit": "px",
+          "inheritance": false
+        },
+        {
+          "id": "margin",
+          "displayName": "Margin",
+          "category": "spacing",
+          "compatibleValueTypes": [
+            "spacing"
+          ],
+          "platformMappings": {
+            "css": [
+              "margin",
+              "margin-*"
+            ],
+            "figma": [
+              "GAP"
+            ],
+            "ios": [
+              ".offset()"
+            ],
+            "android": [
+              "layout_margin",
+              "marginStart",
+              "marginEnd"
+            ]
+          },
+          "defaultUnit": "px",
+          "inheritance": false
+        },
+        {
+          "id": "gap-spacing",
+          "displayName": "Gap/Spacing",
+          "category": "spacing",
+          "compatibleValueTypes": [
+            "spacing"
+          ],
+          "platformMappings": {
+            "css": [
+              "gap",
+              "row-gap",
+              "column-gap"
+            ],
+            "figma": [
+              "GAP"
+            ],
+            "ios": [
+              ".spacing()"
+            ],
+            "android": [
+              "layout_spaceBetween",
+              "space"
+            ]
+          },
+          "defaultUnit": "px",
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/75"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-75"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_75"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_75"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "0.125"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1109,13 +1552,31 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/200"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-200"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_200"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_200"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "8"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1141,13 +1602,31 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/300"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-300"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_300"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_300"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "64"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1173,13 +1652,31 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/400"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-400"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_400"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_400"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "512"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1205,13 +1702,31 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/500"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-500"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_500"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_500"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "4096"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1237,13 +1752,31 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/600"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-600"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_600"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_600"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "32768"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1269,13 +1802,31 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/700"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-700"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_700"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_700"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "262144"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1333,13 +1884,31 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
+      "codeSyntax": [
+        {
+          "platformId": "platform-000000",
+          "formattedName": "Spacing/900"
+        },
+        {
+          "platformId": "platform-111111",
+          "formattedName": "--sp-spacing-900"
+        },
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Sp_Spacing_900"
+        },
+        {
+          "platformId": "platform-333333",
+          "formattedName": "SP_SPACING_900"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
             "value": "16777216"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     }
@@ -1723,713 +2292,6 @@
       ]
     }
   ],
-  "standardPropertyTypes": [
-    {
-      "id": "background-color",
-      "displayName": "Background Color",
-      "category": "color",
-      "compatibleValueTypes": [
-        "color"
-      ],
-      "platformMappings": {
-        "css": [
-          "background",
-          "background-color"
-        ],
-        "figma": [
-          "FRAME_FILL",
-          "SHAPE_FILL"
-        ],
-        "ios": [
-          ".background()",
-          ".backgroundColor"
-        ],
-        "android": [
-          "background",
-          "colorBackground"
-        ]
-      },
-      "inheritance": true
-    },
-    {
-      "id": "text-color",
-      "displayName": "Text Color",
-      "category": "color",
-      "compatibleValueTypes": [
-        "color"
-      ],
-      "platformMappings": {
-        "css": [
-          "color"
-        ],
-        "figma": [
-          "TEXT_FILL"
-        ],
-        "ios": [
-          ".foregroundColor()",
-          ".foregroundStyle()"
-        ],
-        "android": [
-          "textColor",
-          "colorOnSurface"
-        ]
-      },
-      "inheritance": true
-    },
-    {
-      "id": "border-color",
-      "displayName": "Border Color",
-      "category": "color",
-      "compatibleValueTypes": [
-        "color"
-      ],
-      "platformMappings": {
-        "css": [
-          "border-color",
-          "border-*-color"
-        ],
-        "figma": [
-          "STROKE_COLOR"
-        ],
-        "ios": [
-          ".border()",
-          ".strokeColor"
-        ],
-        "android": [
-          "strokeColor",
-          "colorOutline"
-        ]
-      },
-      "inheritance": false
-    },
-    {
-      "id": "shadow-color",
-      "displayName": "Shadow Color",
-      "category": "color",
-      "compatibleValueTypes": [
-        "color"
-      ],
-      "platformMappings": {
-        "css": [
-          "box-shadow",
-          "text-shadow"
-        ],
-        "figma": [
-          "EFFECT_COLOR"
-        ],
-        "ios": [
-          ".shadow()",
-          ".shadowColor"
-        ],
-        "android": [
-          "shadowColor",
-          "elevation"
-        ]
-      },
-      "inheritance": false
-    },
-    {
-      "id": "width-height",
-      "displayName": "Width/Height",
-      "category": "dimension",
-      "compatibleValueTypes": [
-        "dimension"
-      ],
-      "platformMappings": {
-        "css": [
-          "width",
-          "height",
-          "min-width",
-          "max-width",
-          "min-height",
-          "max-height"
-        ],
-        "figma": [
-          "WIDTH_HEIGHT"
-        ],
-        "ios": [
-          ".frame()",
-          ".width()",
-          ".height()"
-        ],
-        "android": [
-          "layout_width",
-          "layout_height"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": false
-    },
-    {
-      "id": "padding",
-      "displayName": "Padding",
-      "category": "spacing",
-      "compatibleValueTypes": [
-        "spacing"
-      ],
-      "platformMappings": {
-        "css": [
-          "padding",
-          "padding-*"
-        ],
-        "figma": [
-          "GAP"
-        ],
-        "ios": [
-          ".padding()"
-        ],
-        "android": [
-          "padding",
-          "paddingStart",
-          "paddingEnd"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": false
-    },
-    {
-      "id": "margin",
-      "displayName": "Margin",
-      "category": "spacing",
-      "compatibleValueTypes": [
-        "spacing"
-      ],
-      "platformMappings": {
-        "css": [
-          "margin",
-          "margin-*"
-        ],
-        "figma": [
-          "GAP"
-        ],
-        "ios": [
-          ".offset()"
-        ],
-        "android": [
-          "layout_margin",
-          "marginStart",
-          "marginEnd"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": false
-    },
-    {
-      "id": "gap-spacing",
-      "displayName": "Gap/Spacing",
-      "category": "spacing",
-      "compatibleValueTypes": [
-        "spacing"
-      ],
-      "platformMappings": {
-        "css": [
-          "gap",
-          "row-gap",
-          "column-gap"
-        ],
-        "figma": [
-          "GAP"
-        ],
-        "ios": [
-          ".spacing()"
-        ],
-        "android": [
-          "layout_spaceBetween",
-          "space"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": false
-    },
-    {
-      "id": "border-radius",
-      "displayName": "Border Radius",
-      "category": "border",
-      "compatibleValueTypes": [
-        "dimension",
-        "radius"
-      ],
-      "platformMappings": {
-        "css": [
-          "border-radius",
-          "border-*-radius"
-        ],
-        "figma": [
-          "CORNER_RADIUS"
-        ],
-        "ios": [
-          ".cornerRadius()",
-          ".clipShape()"
-        ],
-        "android": [
-          "cornerRadius",
-          "shapeAppearance"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": false
-    },
-    {
-      "id": "font-family",
-      "displayName": "Font Family",
-      "category": "typography",
-      "compatibleValueTypes": [
-        "font-family"
-      ],
-      "platformMappings": {
-        "css": [
-          "font-family"
-        ],
-        "figma": [
-          "FONT_FAMILY"
-        ],
-        "ios": [
-          ".font()",
-          ".fontFamily()"
-        ],
-        "android": [
-          "fontFamily",
-          "typeface"
-        ]
-      },
-      "inheritance": true
-    },
-    {
-      "id": "font-size",
-      "displayName": "Font Size",
-      "category": "typography",
-      "compatibleValueTypes": [
-        "font-size"
-      ],
-      "platformMappings": {
-        "css": [
-          "font-size"
-        ],
-        "figma": [
-          "FONT_SIZE"
-        ],
-        "ios": [
-          ".font()",
-          ".fontSize()"
-        ],
-        "android": [
-          "textSize",
-          "fontSize"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": true
-    },
-    {
-      "id": "font-weight",
-      "displayName": "Font Weight",
-      "category": "typography",
-      "compatibleValueTypes": [
-        "font-weight"
-      ],
-      "platformMappings": {
-        "css": [
-          "font-weight"
-        ],
-        "figma": [
-          "FONT_WEIGHT"
-        ],
-        "ios": [
-          ".fontWeight()",
-          ".font()"
-        ],
-        "android": [
-          "textStyle",
-          "fontWeight"
-        ]
-      },
-      "inheritance": true
-    },
-    {
-      "id": "font-style",
-      "displayName": "Font Style",
-      "category": "typography",
-      "compatibleValueTypes": [
-        "font-style"
-      ],
-      "platformMappings": {
-        "css": [
-          "font-style"
-        ],
-        "figma": [
-          "FONT_STYLE"
-        ],
-        "ios": [
-          ".italic()",
-          ".font()"
-        ],
-        "android": [
-          "textStyle",
-          "fontStyle"
-        ]
-      },
-      "inheritance": true
-    },
-    {
-      "id": "line-height",
-      "displayName": "Line Height",
-      "category": "typography",
-      "compatibleValueTypes": [
-        "line-height"
-      ],
-      "platformMappings": {
-        "css": [
-          "line-height"
-        ],
-        "figma": [
-          "LINE_HEIGHT"
-        ],
-        "ios": [
-          ".lineSpacing()",
-          ".lineHeight()"
-        ],
-        "android": [
-          "lineHeight",
-          "lineSpacingMultiplier"
-        ]
-      },
-      "inheritance": true
-    },
-    {
-      "id": "letter-spacing",
-      "displayName": "Letter Spacing",
-      "category": "typography",
-      "compatibleValueTypes": [
-        "letter-spacing"
-      ],
-      "platformMappings": {
-        "css": [
-          "letter-spacing"
-        ],
-        "figma": [
-          "LETTER_SPACING"
-        ],
-        "ios": [
-          ".kerning()",
-          ".tracking()"
-        ],
-        "android": [
-          "letterSpacing",
-          "textLetterSpacing"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": true
-    },
-    {
-      "id": "text-alignment",
-      "displayName": "Text Alignment",
-      "category": "typography",
-      "compatibleValueTypes": [
-        "text-alignment"
-      ],
-      "platformMappings": {
-        "css": [
-          "text-align"
-        ],
-        "figma": [
-          "TEXT_CONTENT"
-        ],
-        "ios": [
-          ".multilineTextAlignment()"
-        ],
-        "android": [
-          "textAlignment",
-          "gravity"
-        ]
-      },
-      "inheritance": true
-    },
-    {
-      "id": "text-transform",
-      "displayName": "Text Transform",
-      "category": "typography",
-      "compatibleValueTypes": [
-        "text-transform"
-      ],
-      "platformMappings": {
-        "css": [
-          "text-transform"
-        ],
-        "figma": [
-          "TEXT_CONTENT"
-        ],
-        "ios": [
-          ".textCase()"
-        ],
-        "android": [
-          "textAllCaps",
-          "textTransform"
-        ]
-      },
-      "inheritance": true
-    },
-    {
-      "id": "opacity",
-      "displayName": "Opacity",
-      "category": "effect",
-      "compatibleValueTypes": [
-        "opacity"
-      ],
-      "platformMappings": {
-        "css": [
-          "opacity"
-        ],
-        "figma": [
-          "OPACITY"
-        ],
-        "ios": [
-          ".opacity()"
-        ],
-        "android": [
-          "alpha",
-          "opacity"
-        ]
-      },
-      "inheritance": false
-    },
-    {
-      "id": "shadow",
-      "displayName": "Shadow",
-      "category": "effect",
-      "compatibleValueTypes": [
-        "shadow"
-      ],
-      "platformMappings": {
-        "css": [
-          "box-shadow",
-          "filter: drop-shadow()"
-        ],
-        "figma": [
-          "EFFECT_FLOAT"
-        ],
-        "ios": [
-          ".shadow()"
-        ],
-        "android": [
-          "elevation",
-          "shadowDx",
-          "shadowDy"
-        ]
-      },
-      "inheritance": false
-    },
-    {
-      "id": "blur",
-      "displayName": "Blur",
-      "category": "effect",
-      "compatibleValueTypes": [
-        "blur"
-      ],
-      "platformMappings": {
-        "css": [
-          "filter: blur()"
-        ],
-        "figma": [
-          "EFFECT_FLOAT"
-        ],
-        "ios": [
-          ".blur()"
-        ],
-        "android": [
-          "renderEffect",
-          "blurRadius"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": false
-    },
-    {
-      "id": "border-width",
-      "displayName": "Border Width",
-      "category": "border",
-      "compatibleValueTypes": [
-        "dimension"
-      ],
-      "platformMappings": {
-        "css": [
-          "border-width",
-          "border-*-width"
-        ],
-        "figma": [
-          "STROKE_FLOAT"
-        ],
-        "ios": [
-          ".border()"
-        ],
-        "android": [
-          "strokeWidth",
-          "borderWidth"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": false
-    },
-    {
-      "id": "position",
-      "displayName": "Position",
-      "category": "layout",
-      "compatibleValueTypes": [
-        "dimension"
-      ],
-      "platformMappings": {
-        "css": [
-          "position",
-          "top",
-          "right",
-          "bottom",
-          "left"
-        ],
-        "figma": [
-          "ALL_SCOPES"
-        ],
-        "ios": [
-          ".position()",
-          ".offset()"
-        ],
-        "android": [
-          "layout_marginTop",
-          "layout_marginStart"
-        ]
-      },
-      "defaultUnit": "px",
-      "inheritance": false
-    },
-    {
-      "id": "z-index",
-      "displayName": "Z-Index",
-      "category": "layout",
-      "compatibleValueTypes": [
-        "z-index"
-      ],
-      "platformMappings": {
-        "css": [
-          "z-index"
-        ],
-        "figma": [
-          "ALL_SCOPES"
-        ],
-        "ios": [
-          ".zIndex()"
-        ],
-        "android": [
-          "elevation",
-          "translationZ"
-        ]
-      },
-      "inheritance": false
-    },
-    {
-      "id": "flex-properties",
-      "displayName": "Flex Properties",
-      "category": "layout",
-      "compatibleValueTypes": [
-        "flex"
-      ],
-      "platformMappings": {
-        "css": [
-          "flex",
-          "flex-grow",
-          "flex-shrink",
-          "flex-basis"
-        ],
-        "figma": [
-          "ALL_SCOPES"
-        ],
-        "ios": [
-          ".layoutPriority()"
-        ],
-        "android": [
-          "layout_weight",
-          "flex"
-        ]
-      },
-      "inheritance": false
-    },
-    {
-      "id": "duration",
-      "displayName": "Duration",
-      "category": "animation",
-      "compatibleValueTypes": [
-        "duration"
-      ],
-      "platformMappings": {
-        "css": [
-          "animation-duration",
-          "transition-duration"
-        ],
-        "figma": [
-          "EFFECT_FLOAT"
-        ],
-        "ios": [
-          ".animation()"
-        ],
-        "android": [
-          "duration",
-          "animationDuration"
-        ]
-      },
-      "defaultUnit": "ms",
-      "inheritance": false
-    },
-    {
-      "id": "easing",
-      "displayName": "Easing",
-      "category": "animation",
-      "compatibleValueTypes": [
-        "cubic-bezier"
-      ],
-      "platformMappings": {
-        "css": [
-          "animation-timing-function",
-          "transition-timing-function"
-        ],
-        "figma": [
-          "ALL_SCOPES"
-        ],
-        "ios": [
-          ".animation()"
-        ],
-        "android": [
-          "interpolator",
-          "animationInterpolator"
-        ]
-      },
-      "inheritance": false
-    },
-    {
-      "id": "delay",
-      "displayName": "Delay",
-      "category": "animation",
-      "compatibleValueTypes": [
-        "duration"
-      ],
-      "platformMappings": {
-        "css": [
-          "animation-delay",
-          "transition-delay"
-        ],
-        "figma": [
-          "EFFECT_FLOAT"
-        ],
-        "ios": [
-          ".animation()"
-        ],
-        "android": [
-          "startDelay",
-          "animationDelay"
-        ]
-      },
-      "defaultUnit": "ms",
-      "inheritance": false
-    }
-  ],
-  "propertyTypes": [],
   "resolvedValueTypes": [
     {
       "id": "color",
@@ -2492,5 +2354,20 @@
       "taxonomyId-b6aa0844-bf72-40c7-ac70-28fa1353ee2b",
       "taxonomyId-3333-3333-3333"
     ]
-  }
+  },
+  "versionHistory": [
+    {
+      "version": "1.0.0",
+      "dimensions": [
+        "dimensionId-0000-0000-0000",
+        "dimensionId-1111-1111-1111",
+        "dimensionId-2222-2222-2222"
+      ],
+      "date": "2024-03-20"
+    }
+  ],
+  "systemName": "Example GH repo design system",
+  "systemId": "example-gh-repo-design-system",
+  "description": "A minimal example design system from a GitHub repository",
+  "version": "1.0.0"
 }
