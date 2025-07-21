@@ -1,186 +1,113 @@
 {
+  "version": "1.0.0",
+  "description": "Test",
+  "systemName": "Nates GH Test",
+  "systemId": "nates-design-system",
   "tokenCollections": [
     {
-      "id": "tokenCollection-AAAA-AAAA-AAAA",
+      "id": "collection-color",
       "name": "Color",
       "resolvedValueTypeIds": [
         "color"
       ],
-      "private": false
+      "private": false,
+      "supportedDimensionIds": [
+        "dimension-color-scheme",
+        "dimension-contrast"
+      ],
+      "defaultModeIds": [
+        "mode-light",
+        "mode-regular"
+      ],
+      "modeResolutionStrategy": {
+        "priorityByType": [
+          "COLOR_SCHEME",
+          "CONTRAST"
+        ],
+        "fallbackStrategy": "MOST_SPECIFIC_MATCH"
+      }
     },
     {
-      "id": "tokenCollection-BBBB-BBBB-BBBB",
+      "id": "collection-spacing",
+      "name": "Spacing",
+      "resolvedValueTypeIds": [
+        "dimension"
+      ],
+      "private": false,
+      "supportedDimensionIds": [],
+      "defaultModeIds": [],
+      "modeResolutionStrategy": {
+        "priorityByType": [],
+        "fallbackStrategy": "MOST_SPECIFIC_MATCH"
+      }
+    },
+    {
+      "id": "collection-typography",
       "name": "Typography",
       "resolvedValueTypeIds": [
         "font_family",
-        "line_height",
         "font_weight"
       ],
-      "private": false
-    },
-    {
-      "name": "Dimensions",
-      "description": "",
-      "resolvedValueTypeIds": [
-        "radius",
-        "spacing"
-      ],
       "private": false,
-      "id": "22117476-608c-4115-ba72-ecbe1ecc637c"
+      "supportedDimensionIds": [],
+      "defaultModeIds": [],
+      "modeResolutionStrategy": {
+        "priorityByType": [],
+        "fallbackStrategy": "MOST_SPECIFIC_MATCH"
+      }
     }
   ],
   "dimensions": [
     {
-      "id": "dimensionId-0000-0000-0000",
+      "id": "dimension-color-scheme",
       "displayName": "Color Scheme",
       "modes": [
         {
-          "id": "modeId-light",
+          "id": "mode-light",
           "name": "Light",
-          "dimensionId": "dimensionId-0000-0000-0000"
+          "dimensionId": "dimension-color-scheme"
         },
         {
-          "id": "modeId-dark",
+          "id": "mode-dark",
           "name": "Dark",
-          "dimensionId": "dimensionId-0000-0000-0000"
+          "dimensionId": "dimension-color-scheme"
         }
       ],
       "required": true,
-      "defaultMode": "modeId-light",
-      "resolvedValueTypeIds": [
-        "color",
-        "opacity",
-        "font_weight"
-      ]
-    },
-    {
-      "id": "dimensionId-1111-1111-1111",
-      "displayName": "Contrast",
-      "modes": [
-        {
-          "id": "modeId-regular",
-          "name": "Regular",
-          "dimensionId": "dimensionId-1111-1111-1111"
-        },
-        {
-          "id": "modeId-low",
-          "name": "Low",
-          "dimensionId": "dimensionId-1111-1111-1111"
-        },
-        {
-          "id": "modeId-high",
-          "name": "High",
-          "dimensionId": "dimensionId-1111-1111-1111"
-        }
-      ],
-      "required": false,
-      "defaultMode": "modeId-regular",
+      "defaultMode": "mode-light",
       "resolvedValueTypeIds": [
         "color",
         "opacity"
       ]
     },
     {
-      "id": "dimensionId-2222-2222-2222",
-      "displayName": "Language",
+      "id": "dimension-contrast",
+      "displayName": "Contrast",
       "modes": [
         {
-          "id": "modeId-latin",
-          "name": "Latin",
-          "dimensionId": "dimensionId-2222-2222-2222"
-        },
-        {
-          "id": "modeId-cjk",
-          "name": "CJK",
-          "dimensionId": "dimensionId-2222-2222-2222"
-        },
-        {
-          "id": "modeId-arabic",
-          "name": "Arabic",
-          "dimensionId": "dimensionId-2222-2222-2222"
-        },
-        {
-          "id": "modeId-hebrew",
-          "name": "Hebrew",
-          "dimensionId": "dimensionId-2222-2222-2222"
-        }
-      ],
-      "required": false,
-      "defaultMode": "modeId-latin",
-      "resolvedValueTypeIds": [
-        "font_family",
-        "line_height",
-        "font_weight"
-      ]
-    },
-    {
-      "id": "dimensionId-146f111c-de78-41e4-95ac-cb124df72d24",
-      "displayName": "Responsive size",
-      "description": "",
-      "modes": [
-        {
-          "id": "modeId-653c36c5-649f-404b-baf2-cf5279ddd06f",
-          "name": "Mobile",
-          "description": "",
-          "dimensionId": "dimensionId-146f111c-de78-41e4-95ac-cb124df72d24"
-        },
-        {
-          "id": "modeId-f56d50e4-446f-49df-9488-6274c40e0877",
-          "name": "Tablet",
-          "description": "",
-          "dimensionId": "dimensionId-146f111c-de78-41e4-95ac-cb124df72d24"
-        },
-        {
-          "id": "modeId-58823f28-08da-40d0-88ff-3063166853ff",
-          "name": "Desktop",
-          "description": "",
-          "dimensionId": "dimensionId-146f111c-de78-41e4-95ac-cb124df72d24"
-        }
-      ],
-      "defaultMode": "modeId-653c36c5-649f-404b-baf2-cf5279ddd06f",
-      "required": false,
-      "resolvedValueTypeIds": [
-        "font-size",
-        "spacing"
-      ]
-    },
-    {
-      "id": "dimensionId-053537da-160d-4766-8f60-a6fbb88f0ba7",
-      "displayName": "User density",
-      "description": "",
-      "modes": [
-        {
-          "id": "modeId-0c7852b9-abe4-47cf-a2d6-b5392dfb549d",
-          "name": "Compact",
-          "description": "",
-          "dimensionId": "dimensionId-053537da-160d-4766-8f60-a6fbb88f0ba7"
-        },
-        {
-          "id": "modeId-e277ad43-3e36-4743-9e36-e867c28f8b3f",
+          "id": "mode-regular",
           "name": "Regular",
-          "description": "",
-          "dimensionId": "dimensionId-053537da-160d-4766-8f60-a6fbb88f0ba7"
+          "dimensionId": "dimension-contrast"
         },
         {
-          "id": "modeId-847b0653-c79a-4e35-82a4-c150f6a20f9b",
-          "name": "Spacious",
-          "description": "",
-          "dimensionId": "dimensionId-053537da-160d-4766-8f60-a6fbb88f0ba7"
+          "id": "mode-high",
+          "name": "High",
+          "dimensionId": "dimension-contrast"
         }
       ],
-      "defaultMode": "modeId-e277ad43-3e36-4743-9e36-e867c28f8b3f",
       "required": false,
+      "defaultMode": "mode-regular",
       "resolvedValueTypeIds": [
-        "font-size",
-        "spacing"
+        "color"
       ]
     }
   ],
   "tokens": [
     {
-      "id": "token-7777-7777-7777",
-      "displayName": "Black",
-      "description": "Pure black",
+      "id": "token-blue-50",
+      "displayName": "Blue 50",
+      "description": "Blue color, scale 50",
+      "tokenCollectionId": "collection-color",
       "resolvedValueTypeId": "color",
       "private": false,
       "status": "stable",
@@ -188,1386 +115,1742 @@
       "themeable": false,
       "taxonomies": [
         {
-          "taxonomyId": "taxonomyId-0000-0000-0000",
-          "termId": "termId-0000-0000-0001"
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-blue"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-50"
         }
       ],
       "propertyTypes": [
         {
-          "id": "background-color",
-          "displayName": "Background Color",
-          "category": "color",
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
           "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "background",
-              "background-color"
-            ],
-            "figma": [
-              "FRAME_FILL",
-              "SHAPE_FILL"
-            ],
-            "ios": [
-              ".background()",
-              ".backgroundColor"
-            ],
-            "android": [
-              "background",
-              "colorBackground"
-            ]
-          },
-          "inheritance": true
-        },
-        {
-          "id": "text-color",
-          "displayName": "Text Color",
-          "category": "color",
-          "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "color"
-            ],
-            "figma": [
-              "TEXT_FILL"
-            ],
-            "ios": [
-              ".foregroundColor()",
-              ".foregroundStyle()"
-            ],
-            "android": [
-              "textColor",
-              "colorOnSurface"
-            ]
-          },
-          "inheritance": true
-        },
-        {
-          "id": "border-color",
-          "displayName": "Border Color",
-          "category": "color",
-          "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "border-color",
-              "border-*-color"
-            ],
-            "figma": [
-              "STROKE_COLOR"
-            ],
-            "ios": [
-              ".border()",
-              ".strokeColor"
-            ],
-            "android": [
-              "strokeColor",
-              "colorOutline"
-            ]
-          },
-          "inheritance": false
-        },
-        {
-          "id": "shadow-color",
-          "displayName": "Shadow Color",
-          "category": "color",
-          "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "box-shadow",
-              "text-shadow"
-            ],
-            "figma": [
-              "EFFECT_COLOR"
-            ],
-            "ios": [
-              ".shadow()",
-              ".shadowColor"
-            ],
-            "android": [
-              "shadowColor",
-              "elevation"
-            ]
-          },
-          "inheritance": false
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Black"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-black"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Black"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_BLACK"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "#000000"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-000000",
-              "value": "#111111"
-            },
-            {
-              "platformId": "platform-111111",
-              "value": "#222222"
-            },
-            {
-              "platformId": "platform-222222",
-              "value": "#333333"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#444444"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "token-8888-88888-88888",
-      "displayName": "Blue 500",
-      "description": "Midtone blue",
-      "resolvedValueTypeId": "color",
-      "private": false,
-      "status": "stable",
-      "tokenTier": "PRIMITIVE",
-      "themeable": false,
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-0000-0000-0000",
-          "termId": "termId-0000-0000-0000"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-2222-2222-2227"
-        }
-      ],
-      "propertyTypes": [
-        {
-          "id": "background-color",
-          "displayName": "Background Color",
-          "category": "color",
-          "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "background",
-              "background-color"
-            ],
-            "figma": [
-              "FRAME_FILL",
-              "SHAPE_FILL"
-            ],
-            "ios": [
-              ".background()",
-              ".backgroundColor"
-            ],
-            "android": [
-              "background",
-              "colorBackground"
-            ]
-          },
-          "inheritance": true
-        },
-        {
-          "id": "text-color",
-          "displayName": "Text Color",
-          "category": "color",
-          "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "color"
-            ],
-            "figma": [
-              "TEXT_FILL"
-            ],
-            "ios": [
-              ".foregroundColor()",
-              ".foregroundStyle()"
-            ],
-            "android": [
-              "textColor",
-              "colorOnSurface"
-            ]
-          },
-          "inheritance": true
-        },
-        {
-          "id": "border-color",
-          "displayName": "Border Color",
-          "category": "color",
-          "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "border-color",
-              "border-*-color"
-            ],
-            "figma": [
-              "STROKE_COLOR"
-            ],
-            "ios": [
-              ".border()",
-              ".strokeColor"
-            ],
-            "android": [
-              "strokeColor",
-              "colorOutline"
-            ]
-          },
-          "inheritance": false
-        },
-        {
-          "id": "shadow-color",
-          "displayName": "Shadow Color",
-          "category": "color",
-          "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "box-shadow",
-              "text-shadow"
-            ],
-            "figma": [
-              "EFFECT_COLOR"
-            ],
-            "ios": [
-              ".shadow()",
-              ".shadowColor"
-            ],
-            "android": [
-              "shadowColor",
-              "elevation"
-            ]
-          },
-          "inheritance": false
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Blue/500"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-blue-500"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Blue_500"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_BLUE_500"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [
-            "modeId-light"
-          ],
-          "value": {
-            "value": "#274DEA"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-111111",
-              "value": "lch(57% 67 290)",
-              "metadata": {
-                "description": "Using LCH for better color display on Web"
-              }
-            }
-          ]
-        },
-        {
-          "modeIds": [
-            "modeId-dark"
-          ],
-          "value": {
-            "value": "#6995FE"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-9999-9999-9999",
-      "displayName": "Accent text color",
-      "description": "Color of text using a shade of the accent color hue",
-      "resolvedValueTypeId": "color",
-      "private": false,
-      "status": "stable",
-      "tokenTier": "SEMANTIC",
-      "themeable": true,
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-1111-1111-1111",
-          "termId": "termId-1111-1111-1111"
-        },
-        {
-          "taxonomyId": "taxonomyId-2222-2222-2222",
-          "termId": "termId-1111-1111-1111"
-        }
-      ],
-      "propertyTypes": [
-        {
-          "id": "text-color",
-          "displayName": "Text Color",
-          "category": "color",
-          "compatibleValueTypes": [
-            "color"
-          ],
-          "platformMappings": {
-            "css": [
-              "color"
-            ],
-            "figma": [
-              "TEXT_FILL"
-            ],
-            "ios": [
-              ".foregroundColor()",
-              ".foregroundStyle()"
-            ],
-            "android": [
-              "textColor",
-              "colorOnSurface"
-            ]
-          },
-          "inheritance": true
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Text/Accent"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-text-accent"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Text_Accent"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_TEXT_ACCENT"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [
-            "modeId-light",
-            "modeId-low"
-          ],
-          "value": {
-            "tokenId": "token-8888-88888-88888"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#FF00AA"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#00FFAA"
-            }
-          ]
-        },
-        {
-          "modeIds": [
-            "modeId-light",
-            "modeId-regular"
-          ],
-          "value": {
-            "value": "#4C6FFE"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#4C6FFF"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#4C6F00"
-            }
-          ]
-        },
-        {
-          "modeIds": [
-            "modeId-light",
-            "modeId-high"
-          ],
-          "value": {
-            "value": "#092FCC"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#092FDD"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#092F00"
-            }
-          ]
-        },
-        {
-          "modeIds": [
-            "modeId-dark",
-            "modeId-low"
-          ],
-          "value": {
-            "tokenId": "token-8888-88888-88888"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#FF00BB"
-            }
-          ]
-        },
-        {
-          "modeIds": [
-            "modeId-dark",
-            "modeId-regular"
-          ],
-          "value": {
-            "value": "#346EF9"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#346EFF"
-            }
-          ]
-        },
-        {
-          "modeIds": [
-            "modeId-dark",
-            "modeId-high"
-          ],
-          "value": {
-            "value": "#A7C1FF"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#A7C1AA"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "token-1748981426585",
-      "displayName": "Font primary",
-      "description": "",
-      "resolvedValueTypeId": "font_family",
-      "propertyTypes": [
-        {
-          "id": "font-family",
-          "displayName": "Font Family",
-          "category": "typography",
-          "compatibleValueTypes": [
-            "font-family"
-          ],
-          "platformMappings": {
-            "css": [
-              "font-family"
-            ],
-            "figma": [
-              "FONT_FAMILY"
-            ],
-            "ios": [
-              ".font()",
-              ".fontFamily()"
-            ],
-            "android": [
-              "fontFamily",
-              "typeface"
-            ]
-          },
-          "inheritance": true
-        }
-      ],
-      "private": false,
-      "themeable": true,
-      "status": "stable",
-      "tokenTier": "PRIMITIVE",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-e98c905e-5a83-4be1-ae19-2c2b69523791"
-        },
-        {
-          "taxonomyId": "taxonomyId-2222-2222-2222",
-          "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Font family/Primary"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-font family-primary"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Font family_Primary"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_FONT FAMILY_PRIMARY"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [
-            "modeId-latin"
-          ],
-          "value": {
-            "value": "Inter"
-          },
-          "platformOverrides": []
-        },
-        {
-          "modeIds": [
-            "modeId-cjk"
-          ],
-          "value": {
-            "value": "Inter Han"
-          },
-          "platformOverrides": []
-        },
-        {
-          "modeIds": [
-            "modeId-arabic"
-          ],
-          "value": {
-            "value": "Inter Arabic"
-          },
-          "platformOverrides": []
-        },
-        {
-          "modeIds": [
-            "modeId-hebrew"
-          ],
-          "value": {
-            "value": "Inter Hebrew"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1748982912147",
-      "displayName": "Line height primary",
-      "description": "",
-      "resolvedValueTypeId": "line_height",
-      "propertyTypes": [
-        {
-          "id": "line-height",
-          "displayName": "Line Height",
-          "category": "typography",
-          "compatibleValueTypes": [
-            "line-height"
-          ],
-          "platformMappings": {
-            "css": [
-              "line-height"
-            ],
-            "figma": [
-              "LINE_HEIGHT"
-            ],
-            "ios": [
-              ".lineSpacing()",
-              ".lineHeight()"
-            ],
-            "android": [
-              "lineHeight",
-              "lineSpacingMultiplier"
-            ]
-          },
-          "inheritance": true
-        }
-      ],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-df64aabc-b85d-4004-898a-76ac08143144"
-        },
-        {
-          "taxonomyId": "taxonomyId-2222-2222-2222",
-          "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Line height/Primary"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-line height-primary"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Line height_Primary"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_LINE HEIGHT_PRIMARY"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "1.5"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1748982933911",
-      "displayName": "Font weight primary",
-      "description": "",
-      "resolvedValueTypeId": "font_weight",
-      "propertyTypes": [
-        {
-          "id": "font-weight",
-          "displayName": "Font Weight",
-          "category": "typography",
-          "compatibleValueTypes": [
-            "font-weight"
-          ],
-          "platformMappings": {
-            "css": [
-              "font-weight"
-            ],
-            "figma": [
-              "FONT_WEIGHT"
-            ],
-            "ios": [
-              ".fontWeight()",
-              ".font()"
-            ],
-            "android": [
-              "textStyle",
-              "fontWeight"
-            ]
-          },
-          "inheritance": true
-        }
-      ],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b8fc8e2-690c-4543-bc41-983ead501aad"
-        },
-        {
-          "taxonomyId": "taxonomyId-2222-2222-2222",
-          "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Font weight/Primary"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-font weight-primary"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Font weight_Primary"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_FONT WEIGHT_PRIMARY"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "#000000"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1748982995585",
-      "displayName": "Radius 100",
-      "description": "",
-      "resolvedValueTypeId": "radius",
-      "propertyTypes": [
-        {
-          "id": "border-radius",
-          "displayName": "Border Radius",
-          "category": "border",
-          "compatibleValueTypes": [
+            "color",
             "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
             "radius"
           ],
-          "platformMappings": {
-            "css": [
-              "border-radius",
-              "border-*-radius"
-            ],
-            "figma": [
-              "CORNER_RADIUS"
-            ],
-            "ios": [
-              ".cornerRadius()",
-              ".clipShape()"
-            ],
-            "android": [
-              "cornerRadius",
-              "shapeAppearance"
-            ]
-          },
-          "defaultUnit": "px",
-          "inheritance": false
-        }
-      ],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-00a5e0fb-5da2-42ef-b7d3-8b116d952b64"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Radius/100"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-radius-100"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Radius_100"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_RADIUS_100"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 4
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1749055952697",
-      "displayName": "Font secondary",
-      "description": "",
-      "resolvedValueTypeId": "font_family",
-      "propertyTypes": [
-        {
-          "id": "font-family",
-          "displayName": "Font Family",
-          "category": "typography",
-          "compatibleValueTypes": [
-            "font-family"
-          ],
-          "platformMappings": {
-            "css": [
-              "font-family"
-            ],
-            "figma": [
-              "FONT_FAMILY"
-            ],
-            "ios": [
-              ".font()",
-              ".fontFamily()"
-            ],
-            "android": [
-              "fontFamily",
-              "typeface"
-            ]
-          },
-          "inheritance": true
-        }
-      ],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-e98c905e-5a83-4be1-ae19-2c2b69523791"
-        },
-        {
-          "taxonomyId": "taxonomyId-2222-2222-2222",
-          "termId": "termId-e053c2dc-3511-4165-9dbd-8320e4e7a6e5"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Font family/Secondary"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-font family-secondary"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Font family_Secondary"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_FONT FAMILY_SECONDARY"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "SF Pro"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1749055982042",
-      "displayName": "Line height 200",
-      "description": "",
-      "resolvedValueTypeId": "line_height",
-      "propertyTypes": [
-        {
-          "id": "line-height",
-          "displayName": "Line Height",
-          "category": "typography",
-          "compatibleValueTypes": [
-            "line-height"
-          ],
-          "platformMappings": {
-            "css": [
-              "line-height"
-            ],
-            "figma": [
-              "LINE_HEIGHT"
-            ],
-            "ios": [
-              ".lineSpacing()",
-              ".lineHeight()"
-            ],
-            "android": [
-              "lineHeight",
-              "lineSpacingMultiplier"
-            ]
-          },
-          "inheritance": true
-        }
-      ],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-df64aabc-b85d-4004-898a-76ac08143144"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Line height/200"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-line height-200"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Line height_200"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_LINE HEIGHT_200"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 200
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1749056010580",
-      "displayName": "Font weight 200",
-      "description": "",
-      "resolvedValueTypeId": "font_weight",
-      "propertyTypes": [
-        {
-          "id": "font-weight",
-          "displayName": "Font Weight",
-          "category": "typography",
-          "compatibleValueTypes": [
-            "font-weight"
-          ],
-          "platformMappings": {
-            "css": [
-              "font-weight"
-            ],
-            "figma": [
-              "FONT_WEIGHT"
-            ],
-            "ios": [
-              ".fontWeight()",
-              ".font()"
-            ],
-            "android": [
-              "textStyle",
-              "fontWeight"
-            ]
-          },
-          "inheritance": true
-        }
-      ],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b8fc8e2-690c-4543-bc41-983ead501aad"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Font weight/200"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-font weight-200"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Font weight_200"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_FONT WEIGHT_200"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 200
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-434882cd-5f70-4f95-a5be-18383304aa94",
-      "displayName": "Spacing 50",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=-2",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-eb44ad20-5426-4cee-ab97-f0ff7dac6e43"
-        }
-      ],
-      "propertyTypes": [
-        {
-          "id": "padding",
-          "displayName": "Padding",
-          "category": "spacing",
-          "compatibleValueTypes": [
-            "spacing"
-          ],
-          "platformMappings": {
-            "css": [
-              "padding",
-              "padding-*"
-            ],
-            "figma": [
-              "GAP"
-            ],
-            "ios": [
-              ".padding()"
-            ],
-            "android": [
-              "padding",
-              "paddingStart",
-              "paddingEnd"
-            ]
-          },
-          "defaultUnit": "px",
-          "inheritance": false
-        },
-        {
-          "id": "margin",
-          "displayName": "Margin",
-          "category": "spacing",
-          "compatibleValueTypes": [
-            "spacing"
-          ],
-          "platformMappings": {
-            "css": [
-              "margin",
-              "margin-*"
-            ],
-            "figma": [
-              "GAP"
-            ],
-            "ios": [
-              ".offset()"
-            ],
-            "android": [
-              "layout_margin",
-              "marginStart",
-              "marginEnd"
-            ]
-          },
-          "defaultUnit": "px",
-          "inheritance": false
-        },
-        {
-          "id": "gap-spacing",
-          "displayName": "Gap/Spacing",
-          "category": "spacing",
-          "compatibleValueTypes": [
-            "spacing"
-          ],
-          "platformMappings": {
-            "css": [
-              "gap",
-              "row-gap",
-              "column-gap"
-            ],
-            "figma": [
-              "GAP"
-            ],
-            "ios": [
-              ".spacing()"
-            ],
-            "android": [
-              "layout_spaceBetween",
-              "space"
-            ]
-          },
-          "defaultUnit": "px",
           "inheritance": false
         }
       ],
       "codeSyntax": [
         {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/50"
+          "platformId": "platform-figma",
+          "formattedName": "Blue/50"
         },
         {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-50"
+          "platformId": "platform-web",
+          "formattedName": "--blue-50"
         },
         {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_50"
+          "platformId": "platform-ios",
+          "formattedName": "Blue50"
         },
         {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_50"
+          "platformId": "platform-android",
+          "formattedName": "BLUE_50"
         }
       ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
-            "value": "0.015625"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-c7b5ac27-2a70-4984-a4b6-ff62b711be22",
-      "displayName": "Spacing 75",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=-1",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-f99d8a1e-bf8a-4cf0-8944-6140f19ee6cc"
-        }
-      ],
-      "propertyTypes": [
-        {
-          "id": "padding",
-          "displayName": "Padding",
-          "category": "spacing",
-          "compatibleValueTypes": [
-            "spacing"
-          ],
-          "platformMappings": {
-            "css": [
-              "padding",
-              "padding-*"
-            ],
-            "figma": [
-              "GAP"
-            ],
-            "ios": [
-              ".padding()"
-            ],
-            "android": [
-              "padding",
-              "paddingStart",
-              "paddingEnd"
-            ]
-          },
-          "defaultUnit": "px",
-          "inheritance": false
-        },
-        {
-          "id": "margin",
-          "displayName": "Margin",
-          "category": "spacing",
-          "compatibleValueTypes": [
-            "spacing"
-          ],
-          "platformMappings": {
-            "css": [
-              "margin",
-              "margin-*"
-            ],
-            "figma": [
-              "GAP"
-            ],
-            "ios": [
-              ".offset()"
-            ],
-            "android": [
-              "layout_margin",
-              "marginStart",
-              "marginEnd"
-            ]
-          },
-          "defaultUnit": "px",
-          "inheritance": false
-        },
-        {
-          "id": "gap-spacing",
-          "displayName": "Gap/Spacing",
-          "category": "spacing",
-          "compatibleValueTypes": [
-            "spacing"
-          ],
-          "platformMappings": {
-            "css": [
-              "gap",
-              "row-gap",
-              "column-gap"
-            ],
-            "figma": [
-              "GAP"
-            ],
-            "ios": [
-              ".spacing()"
-            ],
-            "android": [
-              "layout_spaceBetween",
-              "space"
-            ]
-          },
-          "defaultUnit": "px",
-          "inheritance": false
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/75"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-75"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_75"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_75"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "0.125"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-fb83c00b-4e89-4772-85f7-171e38082c1c",
-      "displayName": "Spacing 100",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=0",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
-        }
-      ],
-      "propertyTypes": [],
-      "codeSyntax": [],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "1"
+            "value": "#8db324"
           }
         }
       ]
     },
     {
-      "id": "tokenId-13874ed0-20c2-47d5-b634-cda9a6783b8c",
-      "displayName": "Spacing 200",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=1",
+      "id": "token-blue-100",
+      "displayName": "Blue 100",
+      "description": "Blue color, scale 100",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
       "private": false,
       "status": "stable",
-      "themeable": false,
       "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
+      "themeable": false,
       "taxonomies": [
         {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-blue"
         },
         {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-100"
         }
       ],
-      "propertyTypes": [],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
       "codeSyntax": [
         {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/200"
+          "platformId": "platform-figma",
+          "formattedName": "Blue/100"
         },
         {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-200"
+          "platformId": "platform-web",
+          "formattedName": "--blue-100"
         },
         {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_200"
+          "platformId": "platform-ios",
+          "formattedName": "Blue100"
         },
         {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_200"
+          "platformId": "platform-android",
+          "formattedName": "BLUE_100"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#7a9f1f"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-blue-200",
+      "displayName": "Blue 200",
+      "description": "Blue color, scale 200",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-blue"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-200"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Blue/200"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--blue-200"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Blue200"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "BLUE_200"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#c58b5c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-blue-300",
+      "displayName": "Blue 300",
+      "description": "Blue color, scale 300",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-blue"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-300"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Blue/300"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--blue-300"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Blue300"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "BLUE_300"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#6b0e16"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-blue-400",
+      "displayName": "Blue 400",
+      "description": "Blue color, scale 400",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-blue"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-400"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Blue/400"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--blue-400"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Blue400"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "BLUE_400"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#c0df2c"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-blue-500",
+      "displayName": "Blue 500",
+      "description": "Blue color, scale 500",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-blue"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-500"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Blue/500"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--blue-500"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Blue500"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "BLUE_500"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#6afda3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-red-50",
+      "displayName": "Red 50",
+      "description": "Red color, scale 50",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-red"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-50"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Red/50"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--red-50"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Red50"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "RED_50"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#f82a05"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-red-100",
+      "displayName": "Red 100",
+      "description": "Red color, scale 100",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-red"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-100"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Red/100"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--red-100"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Red100"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "RED_100"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#0ccca1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-red-200",
+      "displayName": "Red 200",
+      "description": "Red color, scale 200",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-red"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-200"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Red/200"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--red-200"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Red200"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "RED_200"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#c31121"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-red-300",
+      "displayName": "Red 300",
+      "description": "Red color, scale 300",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-red"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-300"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Red/300"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--red-300"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Red300"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "RED_300"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#763250"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-red-400",
+      "displayName": "Red 400",
+      "description": "Red color, scale 400",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-red"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-400"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Red/400"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--red-400"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Red400"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "RED_400"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#53c10d"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-red-500",
+      "displayName": "Red 500",
+      "description": "Red color, scale 500",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-red"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-500"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Red/500"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--red-500"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Red500"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "RED_500"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#68ee6a"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-green-50",
+      "displayName": "Green 50",
+      "description": "Green color, scale 50",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-green"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-50"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Green/50"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--green-50"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Green50"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GREEN_50"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#fae300"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-green-100",
+      "displayName": "Green 100",
+      "description": "Green color, scale 100",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-green"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-100"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Green/100"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--green-100"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Green100"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GREEN_100"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#63d7d5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-green-200",
+      "displayName": "Green 200",
+      "description": "Green color, scale 200",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-green"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-200"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Green/200"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--green-200"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Green200"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GREEN_200"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#a93955"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-green-300",
+      "displayName": "Green 300",
+      "description": "Green color, scale 300",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-green"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-300"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Green/300"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--green-300"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Green300"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GREEN_300"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#b19702"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-green-400",
+      "displayName": "Green 400",
+      "description": "Green color, scale 400",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-green"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-400"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Green/400"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--green-400"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Green400"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GREEN_400"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#a05a28"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-green-500",
+      "displayName": "Green 500",
+      "description": "Green color, scale 500",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-green"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-500"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Green/500"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--green-500"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Green500"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GREEN_500"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#cb89e0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-gray-50",
+      "displayName": "Gray 50",
+      "description": "Gray color, scale 50",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-gray"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-50"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Gray/50"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--gray-50"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Gray50"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GRAY_50"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#80b9f5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-gray-100",
+      "displayName": "Gray 100",
+      "description": "Gray color, scale 100",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-gray"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-100"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Gray/100"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--gray-100"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Gray100"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GRAY_100"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#acd673"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-gray-200",
+      "displayName": "Gray 200",
+      "description": "Gray color, scale 200",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-gray"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-200"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Gray/200"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--gray-200"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Gray200"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GRAY_200"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#c04795"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-gray-300",
+      "displayName": "Gray 300",
+      "description": "Gray color, scale 300",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-gray"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-300"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Gray/300"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--gray-300"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Gray300"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GRAY_300"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#0e04be"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-gray-400",
+      "displayName": "Gray 400",
+      "description": "Gray color, scale 400",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-gray"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-400"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Gray/400"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--gray-400"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Gray400"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GRAY_400"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#6dfebe"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-gray-500",
+      "displayName": "Gray 500",
+      "description": "Gray color, scale 500",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-gray"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-500"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Gray/500"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--gray-500"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Gray500"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GRAY_500"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#ca76e2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-accent-color",
+      "displayName": "Accent",
+      "description": "Themable color",
+      "tokenCollectionId": "collection-color",
+      "resolvedValueTypeId": "color",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": true,
+      "taxonomies": [
+        {
+          "taxonomyId": "taxonomy-color-family",
+          "termId": "term-gray"
+        },
+        {
+          "taxonomyId": "taxonomy-scale",
+          "termId": "term-500"
+        }
+      ],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Gray/500"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--gray-500"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Gray500"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "GRAY_500"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "#6afda3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-spacing-8",
+      "displayName": "Spacing 8",
+      "description": "Spacing of 8px",
+      "tokenCollectionId": "collection-spacing",
+      "resolvedValueTypeId": "dimension",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Spacing/8"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--spacing-8"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Spacing8"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "SPACING_8"
         }
       ],
       "valuesByMode": [
@@ -1575,723 +1858,1351 @@
           "modeIds": [],
           "value": {
             "value": "8"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-4815d360-0875-4648-a2bc-2742222eea71",
-      "displayName": "Spacing 300",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=2",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-ec28bd9e-1b35-4280-9ae3-da39459059c7"
-        }
-      ],
-      "propertyTypes": [],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/300"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-300"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_300"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_300"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "64"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-0e9a3459-7dc4-4ab0-bce9-eb47ae26a25d",
-      "displayName": "Spacing 400",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=3",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-d99320c2-3815-4248-8bf8-8832202e08cb"
-        }
-      ],
-      "propertyTypes": [],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/400"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-400"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_400"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_400"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "512"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-7882f9ab-6bfc-4dfa-b99f-733486b54e38",
-      "displayName": "Spacing 500",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=4",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-2222-2222-2227"
-        }
-      ],
-      "propertyTypes": [],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/500"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-500"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_500"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_500"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "4096"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-fd9f769b-9c40-4c2c-9e7b-bc6a6cc1cb37",
-      "displayName": "Spacing 600",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=5",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-80e11568-8932-43cc-9ae6-195e41de2f53"
-        }
-      ],
-      "propertyTypes": [],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/600"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-600"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_600"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_600"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "32768"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-a05a85a5-7971-4e60-bfe7-95e6e3ff6b5d",
-      "displayName": "Spacing 700",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=6",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-f681e235-2597-46ef-8c23-6e2be1989041"
-        }
-      ],
-      "propertyTypes": [],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/700"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-700"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_700"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_700"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "262144"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "tokenId-7e7d6abb-6126-4429-a8c6-112743e19fac",
-      "displayName": "Spacing 800",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=7",
-      "private": false,
-      "status": "stable",
-      "themeable": false,
-      "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-2a16f703-35c5-41d3-9ecc-a61095e39ac4"
-        }
-      ],
-      "propertyTypes": [],
-      "codeSyntax": [],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": "2097152"
           }
         }
       ]
     },
     {
-      "id": "tokenId-ce2e7e66-c3ee-45e8-a8c4-d08d6c78066e",
-      "displayName": "Spacing 900",
-      "resolvedValueTypeId": "spacing",
-      "description": "Generated by algorithm \"Minimal Spacing Scale Algorithm\" with n=8",
+      "id": "token-spacing-16",
+      "displayName": "Spacing 16",
+      "description": "Spacing of 16px",
+      "tokenCollectionId": "collection-spacing",
+      "resolvedValueTypeId": "dimension",
       "private": false,
       "status": "stable",
-      "themeable": false,
       "tokenTier": "PRIMITIVE",
-      "generatedByAlgorithm": true,
-      "algorithmId": "minimal-spacing-algorithm",
-      "taxonomies": [
+      "themeable": false,
+      "taxonomies": [],
+      "propertyTypes": [
         {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-d4e33d4a-73ed-4361-8bc9-29d9f5fae6aa"
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
         }
       ],
-      "propertyTypes": [],
       "codeSyntax": [
         {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/900"
+          "platformId": "platform-figma",
+          "formattedName": "Spacing/16"
         },
         {
-          "platformId": "platform-111111",
-          "formattedName": "--sp-spacing-900"
+          "platformId": "platform-web",
+          "formattedName": "--spacing-16"
         },
         {
-          "platformId": "platform-222222",
-          "formattedName": "Sp_Spacing_900"
+          "platformId": "platform-ios",
+          "formattedName": "Spacing16"
         },
         {
-          "platformId": "platform-333333",
-          "formattedName": "SP_SPACING_900"
+          "platformId": "platform-android",
+          "formattedName": "SPACING_16"
         }
       ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
-            "value": "16777216"
-          },
-          "platformOverrides": []
+            "value": "16"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-spacing-24",
+      "displayName": "Spacing 24",
+      "description": "Spacing of 24px",
+      "tokenCollectionId": "collection-spacing",
+      "resolvedValueTypeId": "dimension",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Spacing/24"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--spacing-24"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Spacing24"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "SPACING_24"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-spacing-32",
+      "displayName": "Spacing 32",
+      "description": "Spacing of 32px",
+      "tokenCollectionId": "collection-spacing",
+      "resolvedValueTypeId": "dimension",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Spacing/32"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--spacing-32"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Spacing32"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "SPACING_32"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "32"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-spacing-40",
+      "displayName": "Spacing 40",
+      "description": "Spacing of 40px",
+      "tokenCollectionId": "collection-spacing",
+      "resolvedValueTypeId": "dimension",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [],
+      "propertyTypes": [
+        {
+          "id": "ALL",
+          "displayName": "All Properties",
+          "category": "layout",
+          "compatibleValueTypes": [
+            "color",
+            "dimension",
+            "font-family",
+            "font-weight",
+            "font-size",
+            "line-height",
+            "letter-spacing",
+            "duration",
+            "cubic-bezier",
+            "blur",
+            "radius"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Spacing/40"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "--spacing-40"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Spacing40"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "SPACING_40"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "40"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-font-inter",
+      "displayName": "Font Family Inter",
+      "description": "Font family: Inter",
+      "tokenCollectionId": "collection-typography",
+      "resolvedValueTypeId": "font_family",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [],
+      "propertyTypes": [
+        {
+          "id": "FONT_FAMILY",
+          "displayName": "Font Family",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-family"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Inter"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "inter"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Inter"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "INTER"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "Inter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-font-roboto",
+      "displayName": "Font Family Roboto",
+      "description": "Font family: Roboto",
+      "tokenCollectionId": "collection-typography",
+      "resolvedValueTypeId": "font_family",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [],
+      "propertyTypes": [
+        {
+          "id": "FONT_FAMILY",
+          "displayName": "Font Family",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-family"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "Roboto"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "roboto"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "Roboto"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "ROBOTO"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "Roboto"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-font-sf-pro",
+      "displayName": "Font Family SF Pro",
+      "description": "Font family: SF Pro",
+      "tokenCollectionId": "collection-typography",
+      "resolvedValueTypeId": "font_family",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": false,
+      "taxonomies": [],
+      "propertyTypes": [
+        {
+          "id": "FONT_FAMILY",
+          "displayName": "Font Family",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-family"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "SF Pro"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "sf-pro"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "SFPro"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "SF_PRO"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "SF Pro"
+          }
+        }
+      ]
+    },
+    {
+      "id": "token-font-primary",
+      "displayName": "Font primary",
+      "description": "Themeable font",
+      "tokenCollectionId": "collection-typography",
+      "resolvedValueTypeId": "font_family",
+      "private": false,
+      "status": "stable",
+      "tokenTier": "PRIMITIVE",
+      "themeable": true,
+      "taxonomies": [],
+      "propertyTypes": [
+        {
+          "id": "FONT_FAMILY",
+          "displayName": "Font Family",
+          "category": "typography",
+          "compatibleValueTypes": [
+            "font-family"
+          ],
+          "inheritance": false
+        }
+      ],
+      "codeSyntax": [
+        {
+          "platformId": "platform-figma",
+          "formattedName": "SF Pro"
+        },
+        {
+          "platformId": "platform-web",
+          "formattedName": "sf-pro"
+        },
+        {
+          "platformId": "platform-ios",
+          "formattedName": "SFPro"
+        },
+        {
+          "platformId": "platform-android",
+          "formattedName": "SF_PRO"
+        }
+      ],
+      "valuesByMode": [
+        {
+          "modeIds": [],
+          "value": {
+            "value": "SF Pro"
+          }
         }
       ]
     }
   ],
   "platforms": [
     {
-      "id": "platform-000000",
+      "id": "platform-figma",
       "displayName": "Figma",
       "syntaxPatterns": {
         "prefix": "",
         "suffix": "",
         "delimiter": "/",
-        "capitalization": "capitalize",
-        "formatString": ""
+        "capitalization": "capitalize"
       }
     },
     {
-      "id": "platform-111111",
-      "displayName": "Web",
-      "syntaxPatterns": {
-        "prefix": "--sp",
-        "suffix": "",
-        "delimiter": "-",
-        "capitalization": "lowercase",
-        "formatString": ""
-      }
+      "id": "platform-web",
+      "displayName": "Web"
     },
     {
-      "id": "platform-222222",
-      "displayName": "iOS",
-      "syntaxPatterns": {
-        "prefix": "sp",
-        "suffix": "",
-        "delimiter": "_",
-        "capitalization": "capitalize",
-        "formatString": ""
-      }
+      "id": "platform-ios",
+      "displayName": "iOS"
     },
     {
-      "id": "platform-333333",
-      "displayName": "Android",
-      "syntaxPatterns": {
-        "prefix": "sp",
-        "suffix": "",
-        "delimiter": "_",
-        "capitalization": "uppercase",
-        "formatString": ""
-      }
+      "id": "platform-android",
+      "displayName": "Android"
     }
   ],
-  "themes": [
+  "platformExtensions": [
     {
-      "id": "default",
-      "displayName": "Default Theme",
-      "isDefault": true,
-      "description": "The default theme for the design system"
+      "platformId": "platform-web",
+      "repositoryUri": "company/design-system-web",
+      "filePath": "platform-extension.json"
+    },
+    {
+      "platformId": "platform-ios",
+      "repositoryUri": "company/design-system-ios",
+      "filePath": "platform-extension.json"
+    },
+    {
+      "platformId": "platform-android",
+      "repositoryUri": "company/design-system-android",
+      "filePath": "platform-extension.json"
     }
   ],
   "taxonomies": [
     {
-      "id": "taxonomyId-0000-0000-0000",
-      "name": "Color family",
-      "description": "Names of our hues",
+      "id": "taxonomy-color-family",
+      "name": "Color Family",
+      "description": "Hue families",
       "terms": [
         {
-          "id": "termId-0000-0000-0000",
+          "id": "term-blue",
           "name": "Blue",
-          "description": "No description provided."
+          "description": ""
         },
         {
-          "id": "termId-0000-0000-0001",
-          "name": "Black",
-          "description": "No description provided."
-        },
-        {
-          "id": "termId-0b5bb63c-4571-405d-8019-2b927823fab5",
+          "id": "term-red",
           "name": "Red",
           "description": ""
         },
         {
-          "id": "termId-29b90aca-f068-4a73-a06c-38958f619e4f",
-          "name": "Yellow",
-          "description": ""
-        },
-        {
-          "id": "termId-5a79d46c-45b1-4e2c-bbdc-e1fbbca1a7b4",
+          "id": "term-green",
           "name": "Green",
           "description": ""
         },
         {
-          "id": "termId-c4200350-6982-48b0-bcba-a64e952eeaf6",
-          "name": "Fuchsia",
+          "id": "term-gray",
+          "name": "Gray",
           "description": ""
         }
-      ],
-      "resolvedValueTypeIds": [
-        "color"
       ]
     },
     {
-      "id": "taxonomyId-1111-1111-1111",
-      "name": "Element",
-      "description": "Names of our elements",
+      "id": "taxonomy-prominance",
+      "name": "Prominance",
+      "description": "Visual prominence in the app",
       "terms": [
         {
-          "id": "termId-1111-1111-1111",
-          "name": "Text",
-          "description": "Text elements"
-        },
-        {
-          "id": "termId-1111-1111-1112",
-          "name": "Button",
-          "description": "Clickable elements"
-        },
-        {
-          "id": "termId-fcdf7059-afc0-423c-9aa3-397924687620",
-          "name": "Icon",
-          "description": ""
-        },
-        {
-          "id": "termId-4a4c8aec-c8e6-4674-bb24-12b7e2855116",
-          "name": "Field",
-          "description": ""
-        },
-        {
-          "id": "termId-cc62e01e-b9c3-4d37-b9d2-458aedc58fe8",
-          "name": "Container",
-          "description": ""
-        }
-      ],
-      "resolvedValueTypeIds": [
-        "color",
-        "spacing",
-        "opacity",
-        "shadow",
-        "radius"
-      ]
-    },
-    {
-      "id": "taxonomyId-2222-2222-2222",
-      "name": "Prominence",
-      "description": "Visual prominence of an element",
-      "terms": [
-        {
-          "id": "termId-1111-1111-1111",
+          "id": "term-accent",
           "name": "Accent",
           "description": ""
         },
         {
-          "id": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1",
-          "name": "Primary",
-          "description": ""
-        },
-        {
-          "id": "termId-e053c2dc-3511-4165-9dbd-8320e4e7a6e5",
+          "id": "term-primary",
           "name": "Secondary",
           "description": ""
         },
         {
-          "id": "termId-786d0fe0-5142-4b40-a5b0-af58f2e56dda",
+          "id": "term-secondary",
+          "name": "Secondary",
+          "description": ""
+        },
+        {
+          "id": "term-tertiary",
           "name": "Tertiary",
           "description": ""
         }
-      ],
-      "resolvedValueTypeIds": [
-        "color",
-        "spacing",
-        "shadow",
-        "radius",
-        "font_family",
-        "line_height"
       ]
     },
     {
-      "id": "taxonomyId-3333-3333-3333",
+      "id": "taxonomy-element",
+      "name": "Element",
+      "description": "UI element type",
+      "terms": [
+        {
+          "id": "term-text",
+          "name": "Text",
+          "description": ""
+        },
+        {
+          "id": "term-bg",
+          "name": "Background",
+          "description": ""
+        },
+        {
+          "id": "term-border",
+          "name": "Border",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "taxonomy-scale",
       "name": "Scale",
       "description": "Numeric scale",
       "terms": [
         {
-          "id": "termId-2222-2222-2227",
-          "name": "500",
-          "description": "500th thing"
+          "id": "term-50",
+          "name": "50",
+          "description": ""
         },
         {
-          "id": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537",
+          "id": "term-100",
           "name": "100",
           "description": ""
         },
         {
-          "id": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea",
+          "id": "term-200",
           "name": "200",
           "description": ""
         },
         {
-          "id": "termId-ec28bd9e-1b35-4280-9ae3-da39459059c7",
+          "id": "term-300",
           "name": "300",
           "description": ""
         },
         {
-          "id": "termId-d99320c2-3815-4248-8bf8-8832202e08cb",
+          "id": "term-400",
           "name": "400",
           "description": ""
         },
         {
-          "id": "termId-80e11568-8932-43cc-9ae6-195e41de2f53",
-          "name": "600",
-          "description": ""
-        },
-        {
-          "id": "termId-f681e235-2597-46ef-8c23-6e2be1989041",
-          "name": "700",
-          "description": ""
-        },
-        {
-          "id": "termId-eb44ad20-5426-4cee-ab97-f0ff7dac6e43",
-          "name": "50",
-          "description": "Generated term for scale: 50"
-        },
-        {
-          "id": "termId-f99d8a1e-bf8a-4cf0-8944-6140f19ee6cc",
-          "name": "75",
-          "description": "Generated term for scale: 75"
-        },
-        {
-          "id": "termId-2a16f703-35c5-41d3-9ecc-a61095e39ac4",
-          "name": "800",
-          "description": "Generated term for scale: 800"
-        },
-        {
-          "id": "termId-d4e33d4a-73ed-4361-8bc9-29d9f5fae6aa",
-          "name": "900",
-          "description": "Generated term for scale: 900"
-        }
-      ],
-      "resolvedValueTypeIds": [
-        "color",
-        "font_family",
-        "line_height",
-        "font_weight",
-        "spacing",
-        "opacity",
-        "shadow",
-        "border",
-        "radius",
-        "z_index",
-        "font-size"
-      ]
-    },
-    {
-      "id": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-      "name": "Token type",
-      "description": "",
-      "terms": [
-        {
-          "id": "termId-e98c905e-5a83-4be1-ae19-2c2b69523791",
-          "name": "Font family",
-          "description": ""
-        },
-        {
-          "id": "termId-1b8fc8e2-690c-4543-bc41-983ead501aad",
-          "name": "Font weight",
-          "description": ""
-        },
-        {
-          "id": "termId-df64aabc-b85d-4004-898a-76ac08143144",
-          "name": "Line height",
-          "description": ""
-        },
-        {
-          "id": "termId-1b26134e-783a-42a7-9817-c21b8207ecca",
-          "name": "Spacing",
-          "description": ""
-        },
-        {
-          "id": "termId-d7808190-c50a-4d53-a620-5d92d6cb208a",
-          "name": "Opacity",
-          "description": ""
-        },
-        {
-          "id": "termId-d5bbaeed-b76f-4b2f-9339-a4f8ab9abb4c",
-          "name": "Shadow",
-          "description": ""
-        },
-        {
-          "id": "termId-51dc0fab-2ffb-4cba-a3d6-d52c625e21ba",
-          "name": "Border",
-          "description": ""
-        },
-        {
-          "id": "termId-00a5e0fb-5da2-42ef-b7d3-8b116d952b64",
-          "name": "Radius",
-          "description": ""
-        },
-        {
-          "id": "termId-f888d6f7-0218-4c58-be57-5c8ac239f020",
-          "name": "Z Index",
-          "description": ""
-        },
-        {
-          "id": "termId-1b26134e-783a-ewaf1-9fewa17-c21f454afe",
-          "name": "Font size",
+          "id": "term-500",
+          "name": "500",
           "description": ""
         }
-      ],
-      "resolvedValueTypeIds": [
-        "font_family",
-        "font_weight",
-        "line_height",
-        "spacing",
-        "opacity",
-        "shadow",
-        "border",
-        "radius",
-        "z_index",
-        "font-size"
-      ]
-    },
-    {
-      "id": "taxonomyId-b6aa0844-bf72-40c7-ac70-28fa1353ee2b",
-      "name": "Attribute",
-      "description": "An attribute of a component's styling",
-      "terms": [
-        {
-          "id": "termId-8ec8e8cf-092d-44ad-81fe-c3e736b42a18",
-          "name": "Background color",
-          "description": ""
-        },
-        {
-          "id": "termId-08954c05-a026-489f-91ea-6fc08b11190b",
-          "name": "Border color",
-          "description": ""
-        },
-        {
-          "id": "termId-28da51a9-acd4-436d-bba3-edad11005a40",
-          "name": "Gap",
-          "description": ""
-        },
-        {
-          "id": "termId-20bc90bb-c649-4012-9671-6c394cdfdac8",
-          "name": "Margin",
-          "description": ""
-        },
-        {
-          "id": "termId-abe826ec-631b-4c06-b3fd-9b85a514301c",
-          "name": "Text color",
-          "description": ""
-        },
-        {
-          "id": "termId-8e484b0e-dad1-4151-9cd4-dbcd7bfe76cf",
-          "name": "Border radius",
-          "description": ""
-        },
-        {
-          "id": "termId-78678bd3-314d-41f9-a627-61c6ed935a99",
-          "name": "Shadow color",
-          "description": ""
-        },
-        {
-          "id": "termId-8b19631d-eb61-499f-84c3-9d36881da48a",
-          "name": "Text size",
-          "description": ""
-        },
-        {
-          "id": "termId-f3e2a8d6-9a8a-4eef-b99b-af6988f80fee",
-          "name": "Icon size",
-          "description": ""
-        }
-      ],
-      "resolvedValueTypeIds": [
-        "color",
-        "font_family",
-        "line_height",
-        "font_weight",
-        "spacing",
-        "opacity",
-        "shadow",
-        "border",
-        "radius",
-        "z_index",
-        "font-size"
       ]
     }
   ],
+  "themes": [
+    {
+      "id": "theme-default",
+      "displayName": "Default Theme",
+      "platforms": [
+        "platform-figma",
+        "platform-web",
+        "platform-ios",
+        "platform-android"
+      ],
+      "isDefault": true
+    },
+    {
+      "id": "theme-brand-a",
+      "displayName": "Brand A",
+      "platforms": [
+        "platform-figma",
+        "platform-web",
+        "platform-ios",
+        "platform-android"
+      ],
+      "isDefault": false,
+      "overrideFileUri": "themed/brand-a-overrides.json"
+    },
+    {
+      "id": "theme-brand-b",
+      "displayName": "Brand B",
+      "platforms": [
+        "platform-figma",
+        "platform-web",
+        "platform-ios",
+        "platform-android"
+      ],
+      "isDefault": false,
+      "overrideFileUri": "themed/brand-b-overrides.json"
+    }
+  ],
+  "namingRules": {
+    "taxonomyOrder": [
+      "taxonomy-color-family",
+      "taxonomy-prominance",
+      "taxonomy-element",
+      "taxonomy-scale"
+    ]
+  },
+  "standardPropertyTypes": [
+    {
+      "id": "background-color",
+      "displayName": "Background Color",
+      "category": "color",
+      "compatibleValueTypes": [
+        "color"
+      ],
+      "platformMappings": {
+        "css": [
+          "background",
+          "background-color"
+        ],
+        "figma": [
+          "FRAME_FILL",
+          "SHAPE_FILL"
+        ],
+        "ios": [
+          ".background()",
+          ".backgroundColor"
+        ],
+        "android": [
+          "background",
+          "colorBackground"
+        ]
+      },
+      "inheritance": true
+    },
+    {
+      "id": "text-color",
+      "displayName": "Text Color",
+      "category": "color",
+      "compatibleValueTypes": [
+        "color"
+      ],
+      "platformMappings": {
+        "css": [
+          "color"
+        ],
+        "figma": [
+          "TEXT_FILL"
+        ],
+        "ios": [
+          ".foregroundColor()",
+          ".foregroundStyle()"
+        ],
+        "android": [
+          "textColor",
+          "colorOnSurface"
+        ]
+      },
+      "inheritance": true
+    },
+    {
+      "id": "border-color",
+      "displayName": "Border Color",
+      "category": "color",
+      "compatibleValueTypes": [
+        "color"
+      ],
+      "platformMappings": {
+        "css": [
+          "border-color",
+          "border-*-color"
+        ],
+        "figma": [
+          "STROKE_COLOR"
+        ],
+        "ios": [
+          ".border()",
+          ".strokeColor"
+        ],
+        "android": [
+          "strokeColor",
+          "colorOutline"
+        ]
+      },
+      "inheritance": false
+    },
+    {
+      "id": "shadow-color",
+      "displayName": "Shadow Color",
+      "category": "color",
+      "compatibleValueTypes": [
+        "color"
+      ],
+      "platformMappings": {
+        "css": [
+          "box-shadow",
+          "text-shadow"
+        ],
+        "figma": [
+          "EFFECT_COLOR"
+        ],
+        "ios": [
+          ".shadow()",
+          ".shadowColor"
+        ],
+        "android": [
+          "shadowColor",
+          "elevation"
+        ]
+      },
+      "inheritance": false
+    },
+    {
+      "id": "width-height",
+      "displayName": "Width/Height",
+      "category": "dimension",
+      "compatibleValueTypes": [
+        "dimension"
+      ],
+      "platformMappings": {
+        "css": [
+          "width",
+          "height",
+          "min-width",
+          "max-width",
+          "min-height",
+          "max-height"
+        ],
+        "figma": [
+          "WIDTH_HEIGHT"
+        ],
+        "ios": [
+          ".frame()",
+          ".width()",
+          ".height()"
+        ],
+        "android": [
+          "layout_width",
+          "layout_height"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": false
+    },
+    {
+      "id": "padding",
+      "displayName": "Padding",
+      "category": "spacing",
+      "compatibleValueTypes": [
+        "dimension"
+      ],
+      "platformMappings": {
+        "css": [
+          "padding",
+          "padding-*"
+        ],
+        "figma": [
+          "GAP"
+        ],
+        "ios": [
+          ".padding()"
+        ],
+        "android": [
+          "padding",
+          "paddingStart",
+          "paddingEnd"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": false
+    },
+    {
+      "id": "margin",
+      "displayName": "Margin",
+      "category": "spacing",
+      "compatibleValueTypes": [
+        "dimension"
+      ],
+      "platformMappings": {
+        "css": [
+          "margin",
+          "margin-*"
+        ],
+        "figma": [
+          "GAP"
+        ],
+        "ios": [
+          ".offset()"
+        ],
+        "android": [
+          "layout_margin",
+          "marginStart",
+          "marginEnd"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": false
+    },
+    {
+      "id": "gap-spacing",
+      "displayName": "Gap/Spacing",
+      "category": "spacing",
+      "compatibleValueTypes": [
+        "dimension"
+      ],
+      "platformMappings": {
+        "css": [
+          "gap",
+          "row-gap",
+          "column-gap"
+        ],
+        "figma": [
+          "GAP"
+        ],
+        "ios": [
+          ".spacing()"
+        ],
+        "android": [
+          "layout_spaceBetween",
+          "space"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": false
+    },
+    {
+      "id": "border-radius",
+      "displayName": "Border Radius",
+      "category": "border",
+      "compatibleValueTypes": [
+        "dimension",
+        "radius"
+      ],
+      "platformMappings": {
+        "css": [
+          "border-radius",
+          "border-*-radius"
+        ],
+        "figma": [
+          "CORNER_RADIUS"
+        ],
+        "ios": [
+          ".cornerRadius()",
+          ".clipShape()"
+        ],
+        "android": [
+          "cornerRadius",
+          "shapeAppearance"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": false
+    },
+    {
+      "id": "font-family",
+      "displayName": "Font Family",
+      "category": "typography",
+      "compatibleValueTypes": [
+        "font-family"
+      ],
+      "platformMappings": {
+        "css": [
+          "font-family"
+        ],
+        "figma": [
+          "FONT_FAMILY"
+        ],
+        "ios": [
+          ".font()",
+          ".fontFamily()"
+        ],
+        "android": [
+          "fontFamily",
+          "typeface"
+        ]
+      },
+      "inheritance": true
+    },
+    {
+      "id": "font-size",
+      "displayName": "Font Size",
+      "category": "typography",
+      "compatibleValueTypes": [
+        "font-size"
+      ],
+      "platformMappings": {
+        "css": [
+          "font-size"
+        ],
+        "figma": [
+          "FONT_SIZE"
+        ],
+        "ios": [
+          ".font()",
+          ".fontSize()"
+        ],
+        "android": [
+          "textSize",
+          "fontSize"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": true
+    },
+    {
+      "id": "font-weight",
+      "displayName": "Font Weight",
+      "category": "typography",
+      "compatibleValueTypes": [
+        "font-weight"
+      ],
+      "platformMappings": {
+        "css": [
+          "font-weight"
+        ],
+        "figma": [
+          "FONT_WEIGHT"
+        ],
+        "ios": [
+          ".fontWeight()",
+          ".font()"
+        ],
+        "android": [
+          "textStyle",
+          "fontWeight"
+        ]
+      },
+      "inheritance": true
+    },
+    {
+      "id": "font-style",
+      "displayName": "Font Style",
+      "category": "typography",
+      "compatibleValueTypes": [
+        "font-style"
+      ],
+      "platformMappings": {
+        "css": [
+          "font-style"
+        ],
+        "figma": [
+          "FONT_STYLE"
+        ],
+        "ios": [
+          ".italic()",
+          ".font()"
+        ],
+        "android": [
+          "textStyle",
+          "fontStyle"
+        ]
+      },
+      "inheritance": true
+    },
+    {
+      "id": "line-height",
+      "displayName": "Line Height",
+      "category": "typography",
+      "compatibleValueTypes": [
+        "line-height"
+      ],
+      "platformMappings": {
+        "css": [
+          "line-height"
+        ],
+        "figma": [
+          "LINE_HEIGHT"
+        ],
+        "ios": [
+          ".lineSpacing()",
+          ".lineHeight()"
+        ],
+        "android": [
+          "lineHeight",
+          "lineSpacingMultiplier"
+        ]
+      },
+      "inheritance": true
+    },
+    {
+      "id": "letter-spacing",
+      "displayName": "Letter Spacing",
+      "category": "typography",
+      "compatibleValueTypes": [
+        "letter-spacing"
+      ],
+      "platformMappings": {
+        "css": [
+          "letter-spacing"
+        ],
+        "figma": [
+          "LETTER_SPACING"
+        ],
+        "ios": [
+          ".kerning()",
+          ".tracking()"
+        ],
+        "android": [
+          "letterSpacing",
+          "textLetterSpacing"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": true
+    },
+    {
+      "id": "text-alignment",
+      "displayName": "Text Alignment",
+      "category": "typography",
+      "compatibleValueTypes": [
+        "text-alignment"
+      ],
+      "platformMappings": {
+        "css": [
+          "text-align"
+        ],
+        "figma": [
+          "TEXT_CONTENT"
+        ],
+        "ios": [
+          ".multilineTextAlignment()"
+        ],
+        "android": [
+          "textAlignment",
+          "gravity"
+        ]
+      },
+      "inheritance": true
+    },
+    {
+      "id": "text-transform",
+      "displayName": "Text Transform",
+      "category": "typography",
+      "compatibleValueTypes": [
+        "text-transform"
+      ],
+      "platformMappings": {
+        "css": [
+          "text-transform"
+        ],
+        "figma": [
+          "TEXT_CONTENT"
+        ],
+        "ios": [
+          ".textCase()"
+        ],
+        "android": [
+          "textAllCaps",
+          "textTransform"
+        ]
+      },
+      "inheritance": true
+    },
+    {
+      "id": "opacity",
+      "displayName": "Opacity",
+      "category": "effect",
+      "compatibleValueTypes": [
+        "opacity"
+      ],
+      "platformMappings": {
+        "css": [
+          "opacity"
+        ],
+        "figma": [
+          "OPACITY"
+        ],
+        "ios": [
+          ".opacity()"
+        ],
+        "android": [
+          "alpha",
+          "opacity"
+        ]
+      },
+      "inheritance": false
+    },
+    {
+      "id": "shadow",
+      "displayName": "Shadow",
+      "category": "effect",
+      "compatibleValueTypes": [
+        "shadow"
+      ],
+      "platformMappings": {
+        "css": [
+          "box-shadow",
+          "filter: drop-shadow()"
+        ],
+        "figma": [
+          "EFFECT_FLOAT"
+        ],
+        "ios": [
+          ".shadow()"
+        ],
+        "android": [
+          "elevation",
+          "shadowDx",
+          "shadowDy"
+        ]
+      },
+      "inheritance": false
+    },
+    {
+      "id": "blur",
+      "displayName": "Blur",
+      "category": "effect",
+      "compatibleValueTypes": [
+        "blur"
+      ],
+      "platformMappings": {
+        "css": [
+          "filter: blur()"
+        ],
+        "figma": [
+          "EFFECT_FLOAT"
+        ],
+        "ios": [
+          ".blur()"
+        ],
+        "android": [
+          "renderEffect",
+          "blurRadius"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": false
+    },
+    {
+      "id": "border-width",
+      "displayName": "Border Width",
+      "category": "border",
+      "compatibleValueTypes": [
+        "dimension"
+      ],
+      "platformMappings": {
+        "css": [
+          "border-width",
+          "border-*-width"
+        ],
+        "figma": [
+          "STROKE_FLOAT"
+        ],
+        "ios": [
+          ".border()"
+        ],
+        "android": [
+          "strokeWidth",
+          "borderWidth"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": false
+    },
+    {
+      "id": "position",
+      "displayName": "Position",
+      "category": "layout",
+      "compatibleValueTypes": [
+        "dimension"
+      ],
+      "platformMappings": {
+        "css": [
+          "position",
+          "top",
+          "right",
+          "bottom",
+          "left"
+        ],
+        "figma": [
+          "ALL_SCOPES"
+        ],
+        "ios": [
+          ".position()",
+          ".offset()"
+        ],
+        "android": [
+          "layout_marginTop",
+          "layout_marginStart"
+        ]
+      },
+      "defaultUnit": "px",
+      "inheritance": false
+    },
+    {
+      "id": "z-index",
+      "displayName": "Z-Index",
+      "category": "layout",
+      "compatibleValueTypes": [
+        "z-index"
+      ],
+      "platformMappings": {
+        "css": [
+          "z-index"
+        ],
+        "figma": [
+          "ALL_SCOPES"
+        ],
+        "ios": [
+          ".zIndex()"
+        ],
+        "android": [
+          "elevation",
+          "translationZ"
+        ]
+      },
+      "inheritance": false
+    },
+    {
+      "id": "flex-properties",
+      "displayName": "Flex Properties",
+      "category": "layout",
+      "compatibleValueTypes": [
+        "flex"
+      ],
+      "platformMappings": {
+        "css": [
+          "flex",
+          "flex-grow",
+          "flex-shrink",
+          "flex-basis"
+        ],
+        "figma": [
+          "ALL_SCOPES"
+        ],
+        "ios": [
+          ".layoutPriority()"
+        ],
+        "android": [
+          "layout_weight",
+          "flex"
+        ]
+      },
+      "inheritance": false
+    },
+    {
+      "id": "duration",
+      "displayName": "Duration",
+      "category": "animation",
+      "compatibleValueTypes": [
+        "duration"
+      ],
+      "platformMappings": {
+        "css": [
+          "animation-duration",
+          "transition-duration"
+        ],
+        "figma": [
+          "EFFECT_FLOAT"
+        ],
+        "ios": [
+          ".animation()"
+        ],
+        "android": [
+          "duration",
+          "animationDuration"
+        ]
+      },
+      "defaultUnit": "ms",
+      "inheritance": false
+    },
+    {
+      "id": "easing",
+      "displayName": "Easing",
+      "category": "animation",
+      "compatibleValueTypes": [
+        "cubic-bezier"
+      ],
+      "platformMappings": {
+        "css": [
+          "animation-timing-function",
+          "transition-timing-function"
+        ],
+        "figma": [
+          "ALL_SCOPES"
+        ],
+        "ios": [
+          ".animation()"
+        ],
+        "android": [
+          "interpolator",
+          "animationInterpolator"
+        ]
+      },
+      "inheritance": false
+    },
+    {
+      "id": "delay",
+      "displayName": "Delay",
+      "category": "animation",
+      "compatibleValueTypes": [
+        "duration"
+      ],
+      "platformMappings": {
+        "css": [
+          "animation-delay",
+          "transition-delay"
+        ],
+        "figma": [
+          "EFFECT_FLOAT"
+        ],
+        "ios": [
+          ".animation()"
+        ],
+        "android": [
+          "startDelay",
+          "animationDelay"
+        ]
+      },
+      "defaultUnit": "ms",
+      "inheritance": false
+    }
+  ],
+  "propertyTypes": [],
   "resolvedValueTypes": [
     {
       "id": "color",
@@ -2299,14 +3210,14 @@
       "type": "COLOR"
     },
     {
+      "id": "dimension",
+      "displayName": "Dimension",
+      "type": "DIMENSION"
+    },
+    {
       "id": "font_family",
       "displayName": "Font Family",
       "type": "FONT_FAMILY"
-    },
-    {
-      "id": "line_height",
-      "displayName": "Line Height",
-      "type": "LINE_HEIGHT"
     },
     {
       "id": "font_weight",
@@ -2314,60 +3225,23 @@
       "type": "FONT_WEIGHT"
     },
     {
-      "id": "spacing",
-      "displayName": "Spacing",
-      "type": "SPACING"
+      "id": "duration",
+      "displayName": "Duration",
+      "type": "DURATION"
     },
     {
       "id": "opacity",
       "displayName": "Opacity"
-    },
-    {
-      "id": "shadow",
-      "displayName": "Shadow"
-    },
-    {
-      "id": "border",
-      "displayName": "Border"
-    },
-    {
-      "id": "radius",
-      "displayName": "Radius",
-      "type": "RADIUS"
-    },
-    {
-      "id": "z_index",
-      "displayName": "Z Index"
-    },
-    {
-      "id": "font-size",
-      "type": "FONT_SIZE",
-      "displayName": "Font Size"
     }
   ],
-  "namingRules": {
-    "taxonomyOrder": [
-      "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-      "taxonomyId-0000-0000-0000",
-      "taxonomyId-1111-1111-1111",
-      "taxonomyId-2222-2222-2222",
-      "taxonomyId-b6aa0844-bf72-40c7-ac70-28fa1353ee2b",
-      "taxonomyId-3333-3333-3333"
-    ]
-  },
   "versionHistory": [
     {
       "version": "1.0.0",
       "dimensions": [
-        "dimensionId-0000-0000-0000",
-        "dimensionId-1111-1111-1111",
-        "dimensionId-2222-2222-2222"
+        "dimension-color-scheme",
+        "dimension-contrast"
       ],
-      "date": "2024-03-20"
+      "date": "2025-05-21"
     }
-  ],
-  "systemName": "Example GH repo design system",
-  "systemId": "example-gh-repo-design-system",
-  "description": "A minimal example design system from a GitHub repository",
-  "version": "1.0.0"
+  ]
 }
