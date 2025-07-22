@@ -2304,7 +2304,11 @@
     },
     {
       "id": "platform-web",
-      "displayName": "Web"
+      "displayName": "Web",
+      "extensionSource": {
+        "repositoryUri": "NateBaldwinDesign/Test_Platform",
+        "filePath": "web.json"
+      }
     },
     {
       "id": "platform-ios",
