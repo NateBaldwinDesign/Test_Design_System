@@ -2317,6 +2317,15 @@
     {
       "id": "platform-android",
       "displayName": "Android"
+    },
+    {
+      "id": "platformId-ec140ad3-4fba-4fca-a981-97e14129b8f1",
+      "displayName": "My Extension",
+      "description": "It's my cool extension",
+      "extensionSource": {
+        "repositoryUri": "local",
+        "filePath": "my-extension.json"
+      }
     }
   ],
   "themes": [
