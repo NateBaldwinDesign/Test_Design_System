@@ -1,0 +1,28 @@
+{
+  "systemId": "nates-design-system",
+  "platformId": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
+  "version": "1.0.0",
+  "metadata": {
+    "name": "Test_Auto_platform",
+    "description": "testing automatic creation",
+    "maintainer": "",
+    "lastUpdated": "2025-07-23",
+    "repositoryVisibility": "private"
+  },
+  "syntaxPatterns": {
+    "prefix": "",
+    "suffix": "",
+    "delimiter": "_",
+    "capitalization": "none",
+    "formatString": ""
+  },
+  "valueFormatters": {
+    "color": "hex",
+    "dimension": "px",
+    "numberPrecision": 2
+  },
+  "algorithmVariableOverrides": [],
+  "tokenOverrides": [],
+  "omittedModes": [],
+  "omittedDimensions": []
+}
