@@ -1,12 +1,12 @@
 {
   "systemId": "nates-design-system",
-  "platformId": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
+  "platformId": "platformId-a96827a9-83ac-41af-93f0-a222dc93c214",
   "version": "1.0.0",
   "metadata": {
-    "name": "Test_Auto_platform",
-    "description": "testing automatic creation",
+    "name": "TEST_Another_platform_repo",
+    "description": "Another test just delete me",
     "maintainer": "",
-    "lastUpdated": "2025-07-23",
+    "lastUpdated": "2025-07-24",
     "repositoryVisibility": "private"
   },
   "syntaxPatterns": {
