@@ -1,0 +1,29 @@
+{
+  "systemId": "nates-design-system",
+  "platformId": "platformId-3f28781a-04e5-4245-8589-70a194d6a7c8",
+  "version": "1.0.0",
+  "figmaFileKey": "platformId-3f28781a-04e5-4245-8589-70a194d6a7c8-platform-figma-file",
+  "metadata": {
+    "name": "Drover",
+    "description": "it's drover!",
+    "maintainer": "",
+    "lastUpdated": "2025-07-24",
+    "repositoryVisibility": "public"
+  },
+  "syntaxPatterns": {
+    "prefix": "Dr.",
+    "suffix": "",
+    "delimiter": ".",
+    "capitalization": "capitalize",
+    "formatString": ""
+  },
+  "valueFormatters": {
+    "color": "hex",
+    "dimension": "px",
+    "numberPrecision": 2
+  },
+  "algorithmVariableOverrides": [],
+  "tokenOverrides": [],
+  "omittedModes": [],
+  "omittedDimensions": []
+}
