@@ -1335,15 +1335,6 @@
         "repositoryUri": "NateBaldwinDesign/Test_Auto_platform",
         "filePath": "platform-extension.json"
       }
-    },
-    {
-      "id": "platformId-13fbb597-b727-4db3-af67-f347b6abf28b",
-      "displayName": "My Platform",
-      "description": "Mine its all mine",
-      "extensionSource": {
-        "repositoryUri": "NateBaldwinDesign/Test_Design_System",
-        "filePath": "my-platform.json"
-      }
     }
   ],
   "themes": [
