@@ -1328,10 +1328,6 @@
       "displayName": "iOS"
     },
     {
-      "id": "platform-333333",
-      "displayName": "Android"
-    },
-    {
       "id": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
       "displayName": "Auto-Platform",
       "description": "automatically created",
