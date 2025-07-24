@@ -1,0 +1,29 @@
+{
+  "systemId": "nates-design-system",
+  "platformId": "platformId-13fbb597-b727-4db3-af67-f347b6abf28b",
+  "version": "1.0.0",
+  "figmaFileKey": "platformId-13fbb597-b727-4db3-af67-f347b6abf28b-platform-figma-file",
+  "metadata": {
+    "name": "My Platform",
+    "description": "Mine its all mine",
+    "maintainer": "",
+    "lastUpdated": "2025-07-24",
+    "repositoryVisibility": "public"
+  },
+  "syntaxPatterns": {
+    "prefix": "me_",
+    "suffix": "",
+    "delimiter": "-",
+    "capitalization": "capitalize",
+    "formatString": ""
+  },
+  "valueFormatters": {
+    "color": "hex",
+    "dimension": "px",
+    "numberPrecision": 2
+  },
+  "algorithmVariableOverrides": [],
+  "tokenOverrides": [],
+  "omittedModes": [],
+  "omittedDimensions": []
+}
