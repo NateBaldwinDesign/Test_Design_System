@@ -1,0 +1,29 @@
+{
+  "systemId": "nates-design-system",
+  "platformId": "platform-333333",
+  "version": "1.0.0",
+  "figmaFileKey": "platform-333333-platform-figma-file",
+  "metadata": {
+    "name": "Android",
+    "description": "",
+    "maintainer": "",
+    "lastUpdated": "2025-07-24",
+    "repositoryVisibility": "public"
+  },
+  "syntaxPatterns": {
+    "prefix": "SP_",
+    "suffix": "",
+    "delimiter": "_",
+    "capitalization": "uppercase",
+    "formatString": ""
+  },
+  "valueFormatters": {
+    "color": "hex",
+    "dimension": "px",
+    "numberPrecision": 2
+  },
+  "algorithmVariableOverrides": [],
+  "tokenOverrides": [],
+  "omittedModes": [],
+  "omittedDimensions": []
+}
