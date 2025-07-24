@@ -11,14 +11,14 @@
     "repositoryVisibility": "public"
   },
   "syntaxPatterns": {
-    "prefix": "Dr.",
-    "suffix": "",
-    "delimiter": ".",
-    "capitalization": "capitalize",
+    "prefix": "Drfew",
+    "suffix": "fewa",
+    "delimiter": "/",
+    "capitalization": "uppercase",
     "formatString": ""
   },
   "valueFormatters": {
-    "color": "hex",
+    "color": "rgb",
     "dimension": "px",
     "numberPrecision": 2
   },
