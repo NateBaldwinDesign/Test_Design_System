@@ -1,10 +1,10 @@
 {
   "systemId": "nates-design-system",
-  "platformId": "platformId-a96827a9-83ac-41af-93f0-a222dc93c214",
+  "platformId": "platformId-f2a2b1af-7845-4a98-95a1-c7dfc26983fa",
   "version": "1.0.0",
   "metadata": {
-    "name": "TEST_Another_platform_repo",
-    "description": "Another test just delete me",
+    "name": "Auto-matic",
+    "description": "Platform extension for platformId-f2a2b1af-7845-4a98-95a1-c7dfc26983fa",
     "maintainer": "",
     "lastUpdated": "2025-07-24",
     "repositoryVisibility": "private"
