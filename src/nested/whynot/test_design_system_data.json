@@ -1335,15 +1335,6 @@
         "repositoryUri": "NateBaldwinDesign/Test_Auto_platform",
         "filePath": "platform-extension.json"
       }
-    },
-    {
-      "id": "platformId-f2a2b1af-7845-4a98-95a1-c7dfc26983fa",
-      "displayName": "Auto-matic",
-      "description": "",
-      "extensionSource": {
-        "repositoryUri": "NateBaldwinDesign/Auto-matic",
-        "filePath": "platform-extension.json"
-      }
     }
   ],
   "themes": [
