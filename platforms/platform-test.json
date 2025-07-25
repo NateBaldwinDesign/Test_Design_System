@@ -1,0 +1,23 @@
+{
+  "systemId": "nates-design-system",
+  "platformId": "platformId-a2dab2a0-0a77-4c6f-8814-c6bb89242ba9",
+  "version": "1.0.0",
+  "status": "active",
+  "figmaFileKey": "platformId-a2dab2a0-0a77-4c6f-8814-c6bb89242ba9-figma-file",
+  "syntaxPatterns": {
+    "prefix": "",
+    "suffix": "",
+    "delimiter": "",
+    "capitalization": "capitalize",
+    "formatString": ""
+  },
+  "valueFormatters": {
+    "color": "hex",
+    "dimension": "px",
+    "numberPrecision": 2
+  },
+  "algorithmVariableOverrides": [],
+  "tokenOverrides": [],
+  "omittedModes": [],
+  "omittedDimensions": []
+}
