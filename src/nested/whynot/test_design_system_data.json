@@ -1742,6 +1742,16 @@
       "date": "2024-03-20"
     }
   ],
+    "figmaConfiguration": {
+    "syntaxPatterns": {
+      "prefix": "",
+      "suffix": "",
+      "delimiter": "/",
+      "capitalization": "capitalize",
+      "formatString": ""
+    },
+    "fileKey": "yTy5ytxeFPRiGou5Poed8a"
+  },
   "systemName": "Nates GH design system",
   "systemId": "nates-design-system",
   "description": "A minimal example design system",
