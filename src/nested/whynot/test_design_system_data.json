@@ -1723,6 +1723,62 @@
       "displayName": "Font Size"
     }
   ],
+  "componentProperties": [
+    {
+      "id": "component-property-0000-0000-0000",
+      "displayName": "Quiet",
+      "description": "A quiet component",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "id": "component-property-1111-1111-1111",
+      "displayName": "Size",
+      "description": "Component size variants",
+      "type": "list",
+      "options": [
+        {
+          "id": "component-option-aaaa-aaaa-aaaa",
+          "displayName": "Small",
+          "description": "Small size variant"
+        },
+        {
+          "id": "component-option-bbbb-bbbb-bbbb",
+          "displayName": "Medium",
+          "description": "Medium size variant"
+        },
+        {
+          "id": "component-option-cccc-cccc-cccc",
+          "displayName": "Large",
+          "description": "Large size variant"
+        }
+      ],
+      "default": "component-option-bbbb-bbbb-bbbb"
+    }
+  ],
+  "componentCategories": [
+    {
+      "id": "category-0000-0000-0000",
+      "displayName": "Input",
+      "description": "Input components such as text fields, checkboxes, etc."
+    },
+    {
+      "id": "category-1111-1111-1111",
+      "displayName": "Navigation",
+      "description": "Navigation components such as menus, tabs, etc."
+    },
+    {
+      "id": "category-2222-2222-2222",
+      "displayName": "Feedback",
+      "description": "Feedback components such as alerts, snackbars, etc."
+    },
+    {
+      "id": "component-categoryId-44656726-18bb-4ba6-ad3a-c288edc9b92c",
+      "displayName": "Actions",
+      "description": "For things that do stuff"
+    }
+  ],
+  "components": [],
   "taxonomyOrder": [
     "taxonomyId-0000-0000-0000",
     "taxonomyId-1111-1111-1111",
@@ -1746,5 +1802,15 @@
   "systemId": "nates-design-system",
   "description": "A minimal example design system",
   "version": "1.0.0",
+  "figmaConfiguration": {
+    "syntaxPatterns": {
+      "prefix": "",
+      "suffix": "",
+      "delimiter": "/",
+      "capitalization": "capitalize",
+      "formatString": ""
+    },
+    "fileKey": "yTy5ytxeFPRiGou5Poed8a"
+  },
   "platformExtensions": []
 }
