@@ -1812,7 +1812,8 @@
         {
           "componentPropertyId": "component-property-0000-0000-0000",
           "description": "",
-          "supportedOptionIds": []
+          "supportedOptionIds": [],
+          "default": false
         },
         {
           "componentPropertyId": "component-property-1111-1111-1111",
@@ -1823,6 +1824,16 @@
             "component-option-cccc-cccc-cccc"
           ],
           "default": "component-option-bbbb-bbbb-bbbb"
+        },
+        {
+          "componentPropertyId": "component-propertyId-ab9d10ca-7ac3-4144-b35e-08a5b981942a",
+          "description": "",
+          "supportedOptionIds": [
+            "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
+            "component-optionId-9643aa3d-8552-4d68-b99b-266586f6509c",
+            "component-optionId-3c8d9c57-e608-477c-bb87-4cb0e161cabc"
+          ],
+          "default": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55"
         }
       ]
     }
