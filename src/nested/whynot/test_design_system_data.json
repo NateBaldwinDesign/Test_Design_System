@@ -1754,6 +1754,30 @@
         }
       ],
       "default": "component-option-bbbb-bbbb-bbbb"
+    },
+    {
+      "id": "component-propertyId-ab9d10ca-7ac3-4144-b35e-08a5b981942a",
+      "displayName": "Priority",
+      "description": "",
+      "type": "list",
+      "default": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
+      "options": [
+        {
+          "id": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
+          "displayName": "Primary",
+          "description": ""
+        },
+        {
+          "id": "component-optionId-9643aa3d-8552-4d68-b99b-266586f6509c",
+          "displayName": "Secondary",
+          "description": ""
+        },
+        {
+          "id": "component-optionId-3c8d9c57-e608-477c-bb87-4cb0e161cabc",
+          "displayName": "Tertiary",
+          "description": ""
+        }
+      ]
     }
   ],
   "componentCategories": [
