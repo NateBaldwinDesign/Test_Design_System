@@ -1802,7 +1802,31 @@
       "description": "For things that do stuff"
     }
   ],
-  "components": [],
+  "components": [
+    {
+      "id": "componentId-2948a1f5-4b43-43ce-aa8f-4f61be4cefa4",
+      "displayName": "Button",
+      "description": "It's a clicky thing",
+      "componentCategoryId": "component-categoryId-44656726-18bb-4ba6-ad3a-c288edc9b92c",
+      "componentProperties": [
+        {
+          "componentPropertyId": "component-property-0000-0000-0000",
+          "description": "",
+          "supportedOptionIds": []
+        },
+        {
+          "componentPropertyId": "component-property-1111-1111-1111",
+          "description": "",
+          "supportedOptionIds": [
+            "component-option-aaaa-aaaa-aaaa",
+            "component-option-bbbb-bbbb-bbbb",
+            "component-option-cccc-cccc-cccc"
+          ],
+          "default": "component-option-bbbb-bbbb-bbbb"
+        }
+      ]
+    }
+  ],
   "taxonomyOrder": [
     "taxonomyId-0000-0000-0000",
     "taxonomyId-1111-1111-1111",
