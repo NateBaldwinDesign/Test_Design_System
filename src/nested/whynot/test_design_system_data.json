@@ -1764,6 +1764,22 @@
       "default": "component-option-bbbb-bbbb-bbbb"
     }
   ],
+  "componentCategories": [
+      {
+        "id": "category-0000-0000-0000",
+        "displayName": "Input",
+        "description": "Input components such as text fields, checkboxes, etc."
+      },
+      {
+        "id": "category-1111-1111-1111",
+        "displayName": "Navigation",         "description": "Navigation components such as menus, tabs, etc."
+      },  
+      {
+        "id": "category-2222-2222-2222",
+        "displayName": "Feedback",
+        "description": "Feedback components such as alerts, snackbars, etc."
+      }
+  ],
   "versionHistory": [
     {
       "version": "1.0.0",
