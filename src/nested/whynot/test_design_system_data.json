@@ -1342,7 +1342,7 @@
       "id": "test-theme-a",
       "displayName": "Test Theme",
       "isDefault": false,
-      "description": "It's all a test"
+      "description": "It's all a test",
       "platforms": [
         "platformId-ce32a768-8295-485f-8b5c-ec9f78982735"
       ]
