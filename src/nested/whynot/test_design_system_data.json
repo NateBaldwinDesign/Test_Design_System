@@ -1346,7 +1346,7 @@
       "platforms": [
         "platformId-ce32a768-8295-485f-8b5c-ec9f78982735"
       ],
-      "extensionSource": {
+      "overrideSource": {
         "repositoryUri": "NateBaldwinDesign/Test_Theme",
         "filePath": "src/test_theme.json"
       }
