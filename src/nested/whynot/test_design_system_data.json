@@ -221,13 +221,45 @@
         {
           "platformId": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
           "formattedName": "Black"
+        },
+        {
+          "platformId": "platformId-8a3582c6-553e-4806-b0cb-47c6b6a35ec5",
+          "formattedName": "Black"
         }
       ],
       "valuesByMode": [
         {
-          "modeIds": [],
+          "modeIds": [
+            "modeId-light"
+          ],
           "value": {
-            "value": "#c19b13"
+            "value": "#786f13"
+          },
+          "platformOverrides": [
+            {
+              "platformId": "platform-000000",
+              "value": "#111111"
+            },
+            {
+              "platformId": "platform-111111",
+              "value": "#222222"
+            },
+            {
+              "platformId": "platform-222222",
+              "value": "#333333"
+            },
+            {
+              "platformId": "platform-333333",
+              "value": "#444444"
+            }
+          ]
+        },
+        {
+          "modeIds": [
+            "modeId-dark"
+          ],
+          "value": {
+            "value": "#2b4d13"
           },
           "platformOverrides": [
             {
@@ -1327,15 +1359,6 @@
         "repositoryUri": "NateBaldwinDesign/Test_Auto_platform",
         "filePath": "platform-extension.json"
       }
-    },
-    {
-      "id": "platformId-8a3582c6-553e-4806-b0cb-47c6b6a35ec5",
-      "displayName": "Delete-me",
-      "description": "my android repo",
-      "extensionSource": {
-        "repositoryUri": "NateBaldwinDesign/Test-Android",
-        "filePath": "platforms/platform-extension.json"
-      }
     }
   ],
   "themes": [
@@ -1875,35 +1898,5 @@
     },
     "fileKey": "yTy5ytxeFPRiGou5Poed8a"
   },
-  "platformExtensions": [
-    {
-      "systemId": "nates-design-system",
-      "platformId": "platformId-8a3582c6-553e-4806-b0cb-47c6b6a35ec5",
-      "version": "1.0.0",
-      "figmaFileKey": "platformId-8a3582c6-553e-4806-b0cb-47c6b6a35ec5-figma-file",
-      "metadata": {
-        "name": "Delete-me",
-        "description": "my android repo",
-        "maintainer": "",
-        "lastUpdated": "2025-07-25",
-        "repositoryVisibility": "private"
-      },
-      "syntaxPatterns": {
-        "prefix": "ANDROID_",
-        "suffix": "",
-        "delimiter": "_",
-        "capitalization": "capitalize",
-        "formatString": ""
-      },
-      "valueFormatters": {
-        "color": "hex",
-        "dimension": "px",
-        "numberPrecision": 2
-      },
-      "algorithmVariableOverrides": [],
-      "tokenOverrides": [],
-      "omittedModes": [],
-      "omittedDimensions": []
-    }
-  ]
+  "platformExtensions": []
 }
