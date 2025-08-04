@@ -215,27 +215,19 @@
       ],
       "codeSyntax": [
         {
-          "platformId": "platform-000000",
+          "platformId": "platform-222222",
           "formattedName": "Black"
         },
         {
-          "platformId": "platform-111111",
-          "formattedName": "--spblack"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpBlack"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPBLACK"
+          "platformId": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
+          "formattedName": "Black"
         }
       ],
       "valuesByMode": [
         {
           "modeIds": [],
           "value": {
-            "value": "#131313"
+            "value": "#ffff13"
           },
           "platformOverrides": [
             {
@@ -1324,29 +1316,41 @@
   ],
   "platforms": [
     {
-      "id": "platform-222222",
-      "displayName": "iOS"
+      "id": "platform-111111",
+      "displayName": "Web",
+      "description": "Web platform for CSS and web applications",
+      "extensionSource": {
+        "repositoryUri": "company/design-system-web",
+        "filePath": "platform-extension.json"
+      },
+      "status": "active"
     },
     {
-      "id": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
-      "displayName": "Auto-Platform",
-      "description": "automatically created",
+      "id": "platform-222222",
+      "displayName": "iOS",
+      "description": "iOS platform for Swift and SwiftUI applications",
       "extensionSource": {
-        "repositoryUri": "NateBaldwinDesign/Test_Auto_platform",
+        "repositoryUri": "company/design-system-ios",
         "filePath": "platform-extension.json"
-      }
+      },
+      "status": "active"
+    },
+    {
+      "id": "platform-333333",
+      "displayName": "Android",
+      "description": "Android platform for Kotlin and Jetpack Compose applications",
+      "extensionSource": {
+        "repositoryUri": "company/design-system-android",
+        "filePath": "platform-extension.json"
+      },
+      "status": "active"
     }
   ],
   "themes": [
     {
-      "id": "test-theme-a",
-      "displayName": "Test Theme",
-      "isDefault": false,
-      "description": "It's all a test",
-      "overrideSource": {
-        "repositoryUri": "NateBaldwinDesign/Test_Theme",
-        "filePath": "src/test_theme.json"
-      }
+      "id": "default",
+      "displayName": "Default Theme",
+      "description": "The default theme for the design system"
     }
   ],
   "taxonomies": [
@@ -1758,97 +1762,56 @@
         }
       ],
       "default": "component-option-bbbb-bbbb-bbbb"
-    },
-    {
-      "id": "component-propertyId-ab9d10ca-7ac3-4144-b35e-08a5b981942a",
-      "displayName": "Priority",
-      "description": "",
-      "type": "list",
-      "default": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
-      "options": [
-        {
-          "id": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
-          "displayName": "Primary",
-          "description": ""
-        },
-        {
-          "id": "component-optionId-9643aa3d-8552-4d68-b99b-266586f6509c",
-          "displayName": "Secondary",
-          "description": ""
-        },
-        {
-          "id": "component-optionId-3c8d9c57-e608-477c-bb87-4cb0e161cabc",
-          "displayName": "Tertiary",
-          "description": ""
-        }
-      ]
     }
   ],
   "componentCategories": [
     {
-      "id": "category-0000-0000-0000",
+      "id": "input",
       "displayName": "Input",
       "description": "Input components such as text fields, checkboxes, etc."
     },
     {
-      "id": "category-1111-1111-1111",
+      "id": "navigation",
       "displayName": "Navigation",
       "description": "Navigation components such as menus, tabs, etc."
     },
     {
-      "id": "category-2222-2222-2222",
+      "id": "feedback",
       "displayName": "Feedback",
       "description": "Feedback components such as alerts, snackbars, etc."
-    },
-    {
-      "id": "component-categoryId-44656726-18bb-4ba6-ad3a-c288edc9b92c",
-      "displayName": "Actions",
-      "description": "For things that do stuff"
     }
   ],
   "components": [
     {
-      "id": "componentId-2948a1f5-4b43-43ce-aa8f-4f61be4cefa4",
+      "id": "button",
       "displayName": "Button",
-      "description": "It's a clicky thing",
-      "componentCategoryId": "component-categoryId-44656726-18bb-4ba6-ad3a-c288edc9b92c",
+      "description": "A clickable button component",
+      "componentCategoryId": "input",
       "componentProperties": [
         {
           "componentPropertyId": "component-property-0000-0000-0000",
-          "description": "",
-          "supportedOptionIds": [],
+          "description": "Quiet buttons should be used sparingly",
           "default": false
         },
         {
           "componentPropertyId": "component-property-1111-1111-1111",
-          "description": "",
+          "description": "Priority changes the strength of visual appearance for the button",
           "supportedOptionIds": [
             "component-option-aaaa-aaaa-aaaa",
-            "component-option-bbbb-bbbb-bbbb",
-            "component-option-cccc-cccc-cccc"
+            "component-option-bbbb-bbbb-bbbb"
           ],
           "default": "component-option-bbbb-bbbb-bbbb"
-        },
-        {
-          "componentPropertyId": "component-propertyId-ab9d10ca-7ac3-4144-b35e-08a5b981942a",
-          "description": "",
-          "supportedOptionIds": [
-            "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
-            "component-optionId-9643aa3d-8552-4d68-b99b-266586f6509c",
-            "component-optionId-3c8d9c57-e608-477c-bb87-4cb0e161cabc"
-          ],
-          "default": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55"
         }
       ]
     }
   ],
   "taxonomyOrder": [
+    "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
     "taxonomyId-0000-0000-0000",
     "taxonomyId-1111-1111-1111",
     "taxonomyId-2222-2222-2222",
-    "taxonomyId-3333-3333-3333",
-    "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-    "taxonomyId-b6aa0844-bf72-40c7-ac70-28fa1353ee2b"
+    "taxonomyId-b6aa0844-bf72-40c7-ac70-28fa1353ee2b",
+    "taxonomyId-3333-3333-3333"
   ],
   "versionHistory": [
     {
@@ -1861,18 +1824,10 @@
       "date": "2024-03-20"
     }
   ],
-  "systemName": "Nates GH design system",
-  "systemId": "nates-design-system",
+  "systemName": "Simple design system",
+  "systemId": "simple-design-system",
   "description": "A minimal example design system",
   "version": "1.0.0",
-  "figmaConfiguration": {
-    "syntaxPatterns": {
-      "prefix": "",
-      "suffix": "",
-      "delimiter": "/",
-      "capitalization": "capitalize",
-      "formatString": ""
-    },
-    "fileKey": "yTy5ytxeFPRiGou5Poed8a"
-  }
+  "figmaConfiguration": null,
+  "platformExtensions": []
 }
