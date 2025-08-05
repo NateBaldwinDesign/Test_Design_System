@@ -499,24 +499,7 @@
           "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Font weight/Primary"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spfont weight-primary"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpFont weight_Primary"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPFONT WEIGHT_PRIMARY"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -546,7 +529,7 @@
           "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
         }
       ],
-      "codeSyntax": [],
+      "": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -606,24 +589,7 @@
           "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/200"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spspacing-200"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpSpacing_200"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPSPACING_200"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
