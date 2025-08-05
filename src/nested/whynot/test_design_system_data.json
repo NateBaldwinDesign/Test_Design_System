@@ -214,18 +214,6 @@
         }
       ],
       "codeSyntax": [
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Black"
-        },
-        {
-          "platformId": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
-          "formattedName": "Black"
-        },
-        {
-          "platformId": "platformId-8a3582c6-553e-4806-b0cb-47c6b6a35ec5",
-          "formattedName": "Black"
-        }
       ],
       "valuesByMode": [
         {
@@ -322,24 +310,7 @@
           "inheritance": false
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Blue/500"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spblue-500"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpBlue_500"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPBLUE_500"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [
@@ -409,24 +380,7 @@
           "inheritance": false
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Text/Accent"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--sptext-accent"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpText_Accent"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPTEXT_ACCENT"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [
@@ -552,24 +506,7 @@
           "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Font family/Primary"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spfont family-primary"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpFont family_Primary"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPFONT FAMILY_PRIMARY"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [
@@ -629,24 +566,7 @@
           "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Line height/Primary"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spline height-primary"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpLine height_Primary"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPLINE HEIGHT_PRIMARY"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -725,24 +645,7 @@
           "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Spacing/100"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spspacing-100"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpSpacing_100"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPSPACING_100"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -773,24 +676,7 @@
           "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Radius/100"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spradius-100"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpRadius_100"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPRADIUS_100"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -869,24 +755,7 @@
           "termId": "termId-e053c2dc-3511-4165-9dbd-8320e4e7a6e5"
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Font family/Secondary"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spfont family-secondary"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpFont family_Secondary"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPFONT FAMILY_SECONDARY"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -965,24 +834,7 @@
           "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Font weight/200"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spfont weight-200"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpFont weight_200"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPFONT WEIGHT_200"
-        }
-      ],
+      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
