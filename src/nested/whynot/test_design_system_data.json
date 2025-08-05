@@ -222,25 +222,7 @@
           ],
           "value": {
             "value": "#786f13"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-000000",
-              "value": "#111111"
-            },
-            {
-              "platformId": "platform-111111",
-              "value": "#222222"
-            },
-            {
-              "platformId": "platform-222222",
-              "value": "#333333"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#444444"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -248,25 +230,8 @@
           ],
           "value": {
             "value": "#2b4d13"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-000000",
-              "value": "#111111"
-            },
-            {
-              "platformId": "platform-111111",
-              "value": "#222222"
-            },
-            {
-              "platformId": "platform-222222",
-              "value": "#333333"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#444444"
-            }
-          ]
+          }
+          
         }
       ]
     },
@@ -318,16 +283,7 @@
           ],
           "value": {
             "value": "#274DEA"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-111111",
-              "value": "lch(57% 67 290)",
-              "metadata": {
-                "description": "Using LCH for better color display on Web"
-              }
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -335,8 +291,7 @@
           ],
           "value": {
             "value": "#6995FE"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -389,17 +344,7 @@
           ],
           "value": {
             "tokenId": "token-8888-88888-88888"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#FF00AA"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#00FFAA"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -408,17 +353,7 @@
           ],
           "value": {
             "value": "#4C6FFE"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#4C6FFF"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#4C6F00"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -427,17 +362,7 @@
           ],
           "value": {
             "value": "#092FCC"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#092FDD"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#092F00"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -446,13 +371,7 @@
           ],
           "value": {
             "tokenId": "token-8888-88888-88888"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#FF00BB"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -461,13 +380,7 @@
           ],
           "value": {
             "value": "#346EF9"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#346EFF"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -476,13 +389,7 @@
           ],
           "value": {
             "value": "#A7C1FF"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#A7C1AA"
-            }
-          ]
+          }
         }
       ]
     },
@@ -514,8 +421,7 @@
           ],
           "value": {
             "value": "Inter"
-          },
-          "platformOverrides": []
+          }
         },
         {
           "modeIds": [
@@ -523,8 +429,7 @@
           ],
           "value": {
             "value": "Inter Han"
-          },
-          "platformOverrides": []
+          }
         },
         {
           "modeIds": [
@@ -532,8 +437,7 @@
           ],
           "value": {
             "value": "Inter Arabic"
-          },
-          "platformOverrides": []
+          }
         },
         {
           "modeIds": [
@@ -541,8 +445,7 @@
           ],
           "value": {
             "value": "Inter Hebrew"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -572,8 +475,7 @@
           "modeIds": [],
           "value": {
             "value": "1.5"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -620,8 +522,7 @@
           "modeIds": [],
           "value": {
             "value": "#000000"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -651,8 +552,7 @@
           "modeIds": [],
           "value": {
             "value": 16
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -682,8 +582,7 @@
           "modeIds": [],
           "value": {
             "value": 4
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -730,8 +629,7 @@
           "modeIds": [],
           "value": {
             "value": 32
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -761,8 +659,7 @@
           "modeIds": [],
           "value": {
             "value": "SF Pro"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -809,8 +706,7 @@
           "modeIds": [],
           "value": {
             "value": 200
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -840,8 +736,7 @@
           "modeIds": [],
           "value": {
             "value": 200
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
