@@ -213,23 +213,34 @@
           "inheritance": false
         }
       ],
-      "codeSyntax": [],
+      "codeSyntax": [
+        {
+          "platformId": "platform-222222",
+          "formattedName": "Black"
+        },
+        {
+          "platformId": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
+          "formattedName": "Black"
+        }
+      ],
       "valuesByMode": [
         {
           "modeIds": [
             "modeId-light"
           ],
           "value": {
-            "value": "#786f13"
-          }
+            "value": "hsl(169.2 0% 0%)"
+          },
+          "platformOverrides": []
         },
         {
           "modeIds": [
             "modeId-dark"
           ],
           "value": {
-            "value": "#2b4d13"
-          }
+            "value": "#0d1713"
+          },
+          "platformOverrides": []
         }
       ]
     },
