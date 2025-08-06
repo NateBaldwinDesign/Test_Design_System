@@ -213,16 +213,6 @@
           "inheritance": false
         }
       ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-222222",
-          "formattedName": "Black"
-        },
-        {
-          "platformId": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
-          "formattedName": "Black"
-        }
-      ],
       "valuesByMode": [
         {
           "modeIds": [
@@ -239,8 +229,7 @@
           ],
           "value": {
             "value": "#0d1713"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -284,7 +273,6 @@
           "inheritance": false
         }
       ],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [
@@ -344,7 +332,6 @@
           "inheritance": false
         }
       ],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [
@@ -422,7 +409,6 @@
           "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
         }
       ],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [
@@ -478,7 +464,6 @@
           "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
         }
       ],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -508,7 +493,6 @@
           "termId": "termId-2030ee73-668f-4c75-8f4d-43404fcbf7c1"
         }
       ],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -538,7 +522,6 @@
           "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
         }
       ],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -568,7 +551,6 @@
           "termId": "termId-e053c2dc-3511-4165-9dbd-8320e4e7a6e5"
         }
       ],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -596,24 +578,6 @@
         {
           "taxonomyId": "taxonomyId-3333-3333-3333",
           "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
-        }
-      ],
-      "codeSyntax": [
-        {
-          "platformId": "platform-000000",
-          "formattedName": "Line height/200"
-        },
-        {
-          "platformId": "platform-111111",
-          "formattedName": "--spline height-200"
-        },
-        {
-          "platformId": "platform-222222",
-          "formattedName": "SpLine height_200"
-        },
-        {
-          "platformId": "platform-333333",
-          "formattedName": "SPLINE HEIGHT_200"
         }
       ],
       "valuesByMode": [
@@ -645,7 +609,6 @@
           "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
         }
       ],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -677,7 +640,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -709,7 +671,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -741,7 +702,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -773,7 +733,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -805,7 +764,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -837,7 +795,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -869,7 +826,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -901,7 +857,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -933,7 +888,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -965,7 +919,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -997,7 +950,6 @@
         }
       ],
       "propertyTypes": [],
-      "codeSyntax": [],
       "valuesByMode": [
         {
           "modeIds": [],
@@ -1009,10 +961,6 @@
     }
   ],
   "platforms": [
-    {
-      "id": "platform-222222",
-      "displayName": "iOS"
-    },
     {
       "id": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
       "displayName": "Auto-Platform",
