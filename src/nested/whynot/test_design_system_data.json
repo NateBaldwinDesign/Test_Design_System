@@ -176,6 +176,13 @@
       ]
     }
   ],
+  "dimensionOrder": [
+    "dimensionId-0000-0000-0000",
+    "dimensionId-1111-1111-1111",
+    "dimensionId-2222-2222-2222",
+    "dimensionId-146f111c-de78-41e4-95ac-cb124df72d24",
+    "dimensionId-053537da-160d-4766-8f60-a6fbb88f0ba7"
+  ],
   "tokens": [
     {
       "id": "token-7777-7777-7777",
@@ -215,28 +222,21 @@
       ],
       "valuesByMode": [
         {
-          "modeIds": [],
+          "modeIds": [
+            "modeId-light"
+          ],
           "value": {
-            "value": "#000000"
+            "value": "hsl(169.2 0% 0%)"
           },
-          "platformOverrides": [
-            {
-              "platformId": "platform-000000",
-              "value": "#111111"
-            },
-            {
-              "platformId": "platform-111111",
-              "value": "#222222"
-            },
-            {
-              "platformId": "platform-222222",
-              "value": "#333333"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#444444"
-            }
-          ]
+          "platformOverrides": []
+        },
+        {
+          "modeIds": [
+            "modeId-dark"
+          ],
+          "value": {
+            "value": "#0d1713"
+          }
         }
       ]
     },
@@ -287,16 +287,7 @@
           ],
           "value": {
             "value": "#274DEA"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-111111",
-              "value": "lch(57% 67 290)",
-              "metadata": {
-                "description": "Using LCH for better color display on Web"
-              }
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -304,8 +295,7 @@
           ],
           "value": {
             "value": "#6995FE"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -357,17 +347,7 @@
           ],
           "value": {
             "tokenId": "token-8888-88888-88888"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#FF00AA"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#00FFAA"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -376,17 +356,7 @@
           ],
           "value": {
             "value": "#4C6FFE"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#4C6FFF"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#4C6F00"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -395,17 +365,7 @@
           ],
           "value": {
             "value": "#092FCC"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#092FDD"
-            },
-            {
-              "platformId": "platform-333333",
-              "value": "#092F00"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -414,13 +374,7 @@
           ],
           "value": {
             "tokenId": "token-8888-88888-88888"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#FF00BB"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -429,13 +383,7 @@
           ],
           "value": {
             "value": "#346EF9"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#346EFF"
-            }
-          ]
+          }
         },
         {
           "modeIds": [
@@ -444,13 +392,7 @@
           ],
           "value": {
             "value": "#A7C1FF"
-          },
-          "platformOverrides": [
-            {
-              "platformId": "platform-222222",
-              "value": "#A7C1AA"
-            }
-          ]
+          }
         }
       ]
     },
@@ -481,8 +423,7 @@
           ],
           "value": {
             "value": "Inter"
-          },
-          "platformOverrides": []
+          }
         },
         {
           "modeIds": [
@@ -490,8 +431,7 @@
           ],
           "value": {
             "value": "Inter Han"
-          },
-          "platformOverrides": []
+          }
         },
         {
           "modeIds": [
@@ -499,8 +439,7 @@
           ],
           "value": {
             "value": "Inter Arabic"
-          },
-          "platformOverrides": []
+          }
         },
         {
           "modeIds": [
@@ -508,8 +447,7 @@
           ],
           "value": {
             "value": "Inter Hebrew"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -538,8 +476,7 @@
           "modeIds": [],
           "value": {
             "value": "1.5"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -568,38 +505,7 @@
           "modeIds": [],
           "value": {
             "value": "#000000"
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1748982963918",
-      "displayName": "Spacing 100",
-      "description": "",
-      "resolvedValueTypeId": "spacing",
-      "propertyTypes": [],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-852b2d86-b7bd-462f-9f77-90cd227dd537"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 16
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -628,38 +534,7 @@
           "modeIds": [],
           "value": {
             "value": 4
-          },
-          "platformOverrides": []
-        }
-      ]
-    },
-    {
-      "id": "token-1749055918672",
-      "displayName": "Spacing 200",
-      "description": "",
-      "resolvedValueTypeId": "spacing",
-      "propertyTypes": [],
-      "private": false,
-      "themeable": false,
-      "status": "experimental",
-      "tokenTier": "SEMANTIC",
-      "taxonomies": [
-        {
-          "taxonomyId": "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
-          "termId": "termId-1b26134e-783a-42a7-9817-c21b8207ecca"
-        },
-        {
-          "taxonomyId": "taxonomyId-3333-3333-3333",
-          "termId": "termId-971de9e1-718a-4938-b6eb-a239fd1c92ea"
-        }
-      ],
-      "valuesByMode": [
-        {
-          "modeIds": [],
-          "value": {
-            "value": 32
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -688,8 +563,7 @@
           "modeIds": [],
           "value": {
             "value": "SF Pro"
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -718,8 +592,7 @@
           "modeIds": [],
           "value": {
             "value": 200
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -748,8 +621,7 @@
           "modeIds": [],
           "value": {
             "value": 200
-          },
-          "platformOverrides": []
+          }
         }
       ]
     },
@@ -1097,41 +969,25 @@
   ],
   "platforms": [
     {
-      "id": "platform-111111",
-      "displayName": "Web",
-      "description": "Web platform for CSS and web applications",
+      "id": "platformId-ce32a768-8295-485f-8b5c-ec9f78982735",
+      "displayName": "Auto-Platform",
+      "description": "automatically created",
       "extensionSource": {
-        "repositoryUri": "company/design-system-web",
+        "repositoryUri": "NateBaldwinDesign/Test_Auto_platform",
         "filePath": "platform-extension.json"
       },
-      "status": "active"
-    },
-    {
-      "id": "platform-222222",
-      "displayName": "iOS",
-      "description": "iOS platform for Swift and SwiftUI applications",
-      "extensionSource": {
-        "repositoryUri": "company/design-system-ios",
-        "filePath": "platform-extension.json"
-      },
-      "status": "active"
-    },
-    {
-      "id": "platform-333333",
-      "displayName": "Android",
-      "description": "Android platform for Kotlin and Jetpack Compose applications",
-      "extensionSource": {
-        "repositoryUri": "company/design-system-android",
-        "filePath": "platform-extension.json"
-      },
-      "status": "active"
+      "figmaPlatformMapping": "WEB"
     }
   ],
   "themes": [
     {
-      "id": "default",
-      "displayName": "Default Theme",
-      "description": "The default theme for the design system"
+      "id": "test-theme-a",
+      "displayName": "Test Theme",
+      "description": "It's all a test",
+      "overrideSource": {
+        "repositoryUri": "NateBaldwinDesign/Test_Theme",
+        "filePath": "src/test_theme.json"
+      }
     }
   ],
   "taxonomies": [
@@ -1543,56 +1399,97 @@
         }
       ],
       "default": "component-option-bbbb-bbbb-bbbb"
+    },
+    {
+      "id": "component-propertyId-ab9d10ca-7ac3-4144-b35e-08a5b981942a",
+      "displayName": "Priority",
+      "description": "",
+      "type": "list",
+      "default": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
+      "options": [
+        {
+          "id": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
+          "displayName": "Primary",
+          "description": ""
+        },
+        {
+          "id": "component-optionId-9643aa3d-8552-4d68-b99b-266586f6509c",
+          "displayName": "Secondary",
+          "description": ""
+        },
+        {
+          "id": "component-optionId-3c8d9c57-e608-477c-bb87-4cb0e161cabc",
+          "displayName": "Tertiary",
+          "description": ""
+        }
+      ]
     }
   ],
   "componentCategories": [
     {
-      "id": "input",
+      "id": "category-0000-0000-0000",
       "displayName": "Input",
       "description": "Input components such as text fields, checkboxes, etc."
     },
     {
-      "id": "navigation",
+      "id": "category-1111-1111-1111",
       "displayName": "Navigation",
       "description": "Navigation components such as menus, tabs, etc."
     },
     {
-      "id": "feedback",
+      "id": "category-2222-2222-2222",
       "displayName": "Feedback",
       "description": "Feedback components such as alerts, snackbars, etc."
+    },
+    {
+      "id": "component-categoryId-44656726-18bb-4ba6-ad3a-c288edc9b92c",
+      "displayName": "Actions",
+      "description": "For things that do stuff"
     }
   ],
   "components": [
     {
-      "id": "button",
+      "id": "componentId-2948a1f5-4b43-43ce-aa8f-4f61be4cefa4",
       "displayName": "Button",
-      "description": "A clickable button component",
-      "componentCategoryId": "input",
+      "description": "It's a clicky thing",
+      "componentCategoryId": "component-categoryId-44656726-18bb-4ba6-ad3a-c288edc9b92c",
       "componentProperties": [
         {
           "componentPropertyId": "component-property-0000-0000-0000",
-          "description": "Quiet buttons should be used sparingly",
+          "description": "",
+          "supportedOptionIds": [],
           "default": false
         },
         {
           "componentPropertyId": "component-property-1111-1111-1111",
-          "description": "Priority changes the strength of visual appearance for the button",
+          "description": "",
           "supportedOptionIds": [
             "component-option-aaaa-aaaa-aaaa",
-            "component-option-bbbb-bbbb-bbbb"
+            "component-option-bbbb-bbbb-bbbb",
+            "component-option-cccc-cccc-cccc"
           ],
           "default": "component-option-bbbb-bbbb-bbbb"
+        },
+        {
+          "componentPropertyId": "component-propertyId-ab9d10ca-7ac3-4144-b35e-08a5b981942a",
+          "description": "",
+          "supportedOptionIds": [
+            "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55",
+            "component-optionId-9643aa3d-8552-4d68-b99b-266586f6509c",
+            "component-optionId-3c8d9c57-e608-477c-bb87-4cb0e161cabc"
+          ],
+          "default": "component-optionId-edd3d8dc-b5c4-4a13-8b34-e463db684c55"
         }
       ]
     }
   ],
   "taxonomyOrder": [
-    "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
     "taxonomyId-0000-0000-0000",
     "taxonomyId-1111-1111-1111",
     "taxonomyId-2222-2222-2222",
-    "taxonomyId-b6aa0844-bf72-40c7-ac70-28fa1353ee2b",
-    "taxonomyId-3333-3333-3333"
+    "taxonomyId-3333-3333-3333",
+    "taxonomyId-c6d4b0a8-a603-4627-8fcd-cd00fcc02616",
+    "taxonomyId-b6aa0844-bf72-40c7-ac70-28fa1353ee2b"
   ],
   "versionHistory": [
     {
@@ -1605,10 +1502,18 @@
       "date": "2024-03-20"
     }
   ],
-  "systemName": "Simple design system",
-  "systemId": "simple-design-system",
+  "systemName": "Nates GH design system",
+  "systemId": "nates-design-system",
   "description": "A minimal example design system",
   "version": "1.0.0",
-  "figmaConfiguration": null,
-  "platformExtensions": []
+  "figmaConfiguration": {
+    "syntaxPatterns": {
+      "prefix": "",
+      "suffix": "",
+      "delimiter": "/",
+      "capitalization": "capitalize",
+      "formatString": ""
+    },
+    "fileKey": "yTy5ytxeFPRiGou5Poed8a"
+  }
 }
