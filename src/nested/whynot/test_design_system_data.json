@@ -219,7 +219,7 @@
             "modeId-light"
           ],
           "value": {
-            "value": "hsl(169.2 0% 0%)"
+            "value": "#514400"
           },
           "platformOverrides": []
         },
@@ -229,7 +229,8 @@
           ],
           "value": {
             "value": "#0d1713"
-          }
+          },
+          "platformOverrides": []
         }
       ]
     },
@@ -1509,6 +1510,5 @@
     },
     "fileKey": "yTy5ytxeFPRiGou5Poed8a",
     "fileColorProfile": "srgb"
-  },
-  "platformExtensions": []
+  }
 }
