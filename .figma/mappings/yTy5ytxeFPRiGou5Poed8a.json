@@ -1,7 +1,7 @@
 {
   "fileKey": "yTy5ytxeFPRiGou5Poed8a",
   "systemId": "design-system",
-  "lastUpdated": "2025-08-15T16:24:48.803Z",
+  "lastUpdated": "2025-08-15T16:26:18.938Z",
   "tempToRealId": {
     "tokenId-ce2e7e66-c3ee-45e8-a8c4-d08d6c78066e": "VariableID:637:38",
     "tokenId-7e7d6abb-6126-4429-a8c6-112743e19fac": "VariableID:637:37",
@@ -59,7 +59,7 @@
     "modeId-dark": "637:1"
   },
   "metadata": {
-    "lastExport": "2025-08-15T16:24:36.469Z"
+    "lastExport": "2025-08-15T16:26:05.899Z"
   },
   "repositoryContext": {
     "owner": "NateBaldwinDesign",
