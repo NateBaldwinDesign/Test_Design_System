@@ -1090,6 +1090,7 @@
         }
       ],
       "resolvedValueTypeIds": [
+        "color",
         "spacing",
         "shadow",
         "radius",
